@@ -1,0 +1,45 @@
+{
+  "asset": "milano-hero-02.jpg",
+  "role": "hero-02",
+  "title": "Milano Villa Lounge with Mountain View",
+  "collection": "Milano",
+  "collectionSlug": "milano",
+  "sourceFile": "milano/4-gigapixel-high fidelity v2-2x.jpg",
+  "orientation": "landscape",
+  "containsPeople": false,
+  "containsSofa": true,
+  "containsChair": true,
+  "containsCoffeeTable": false,
+  "containsAccessories": true,
+  "sceneType": "interior-wide-collection",
+  "brightness": "bright",
+  "dominantColor": "ivory boucle",
+  "homepageScore": 93,
+  "luxuryScore": 95,
+  "recommendedUsage": [
+    "homepage-hero",
+    "banner",
+    "gallery"
+  ],
+  "altText": "Sun-washed Milano villa room with an ivory bouclé sofa and a black bouclé armchair beneath an arched window framing green hills.",
+  "seoTitle": "Milano Villa Bouclé Lounge | Be4Best",
+  "seoDescription": "Be4Best Milano ivory bouclé sofa with a contrasting black armchair in a sunlit arched villa interior.",
+  "aspectRatio": "4:3",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": false,
+  "suitableAs": [
+    "desktop hero",
+    "tablet hero",
+    "section banner",
+    "gallery image"
+  ],
+  "focalPoint": {
+    "x": 58,
+    "y": 55
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "right",
+  "textSafeArea": "bottom-left"
+}

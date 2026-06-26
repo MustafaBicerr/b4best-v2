@@ -7,6 +7,8 @@ import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { FloatingActions } from '@/components/layout/FloatingActions';
 import { PageTransition } from '@/components/layout/PageTransition';
+import { SITE_URL } from '@/config/site';
+import { collectionAsset } from '@/lib/assets/urls';
 
 interface LocaleLayoutProps {
   children: React.ReactNode;
@@ -25,6 +27,10 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'home.meta' });
 
+  // Default OG image used on pages that don't set their own (homepage, about, contact).
+  // Uses the Dubai hero — strongest brand image in the collection.
+  const defaultOgImage = collectionAsset('dubai', 'homepage', 'dubai-hero-01.jpeg');
+
   return {
     title: {
       default: t('title'),
@@ -32,10 +38,10 @@ export async function generateMetadata({
     },
     description: t('description'),
     alternates: {
-      canonical: `/${locale}`,
+      canonical: `${SITE_URL}/${locale}`,
       languages: {
-        tr: '/tr',
-        en: '/en',
+        tr: `${SITE_URL}/tr`,
+        en: `${SITE_URL}/en`,
       },
     },
     openGraph: {
@@ -43,10 +49,19 @@ export async function generateMetadata({
       locale: locale === 'tr' ? 'tr_TR' : 'en_US',
       alternateLocale: locale === 'tr' ? 'en_US' : 'tr_TR',
       siteName: 'Be4Best Furniture',
+      images: [
+        {
+          url: defaultOgImage,
+          width: 1200,
+          height: 800,
+          alt: 'Be4Best Furniture — Luxury Collection',
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
-      site: '@be4best',
+      site: '@b4bmobilya',
+      images: [defaultOgImage],
     },
   };
 }

@@ -12,10 +12,11 @@ import { useRef } from 'react';
  */
 export function useScrollAnimation(
   once = true,
-  margin: `-${number}%` | `${number}px` = '-10%'
+  margin: string = '-10%'
 ) {
   const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once, margin });
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const isInView = useInView(ref, { once, margin: margin as any });
 
   return { ref, isInView };
 }

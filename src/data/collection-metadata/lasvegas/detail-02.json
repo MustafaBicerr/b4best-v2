@@ -1,0 +1,45 @@
+{
+  "asset": "lasvegas-detail-02.jpeg",
+  "role": "detail-02",
+  "title": "Las Vegas Textured Accent Armchair Close-Up",
+  "collection": "Las Vegas",
+  "collectionSlug": "lasvegas",
+  "sourceFile": "lasvegas/1-gigapixel-high fidelity v2-2x.jpeg",
+  "orientation": "landscape",
+  "containsPeople": false,
+  "containsSofa": false,
+  "containsChair": true,
+  "containsCoffeeTable": false,
+  "containsAccessories": false,
+  "sceneType": "furniture-closeup",
+  "brightness": "bright",
+  "dominantColor": "multitone weave",
+  "homepageScore": 62,
+  "luxuryScore": 88,
+  "recommendedUsage": [
+    "product-detail",
+    "detail",
+    "fabric-showcase"
+  ],
+  "altText": "Close-up of a Be4Best Las Vegas accent armchair upholstered in a multitone woven fabric, set against a dark wood slat wall and stone.",
+  "seoTitle": "Las Vegas Textured Armchair | Be4Best",
+  "seoDescription": "Detail of the Be4Best Las Vegas accent armchair's multitone woven upholstery.",
+  "aspectRatio": "6:5",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": true,
+  "suitableAs": [
+    "mobile hero",
+    "product page",
+    "card thumbnail",
+    "gallery image"
+  ],
+  "focalPoint": {
+    "x": 48,
+    "y": 60
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "center",
+  "textSafeArea": "top-left"
+}

@@ -1,0 +1,54 @@
+{
+  "collection": "Dubai",
+  "slug": "dubai",
+  "theme": "Skyline luxury penthouse living",
+  "style": "Contemporary glam, soft neutral palette, floor-to-ceiling city views",
+  "dominantColors": [
+    "warm beige",
+    "soft grey",
+    "marble white",
+    "walnut accent"
+  ],
+  "overallLuxuryScore": 96,
+  "assetCounts": {
+    "master": 11,
+    "homepage": 3,
+    "gallery": 4,
+    "detail": 2,
+    "lifestyle": 2
+  },
+  "recommendedHomepageImages": [
+    "homepage/dubai-hero-01.jpeg",
+    "homepage/dubai-hero-02.png",
+    "homepage/dubai-hero-03.jpeg"
+  ],
+  "recommendedGalleryOrder": [
+    "gallery-01",
+    "gallery-02",
+    "gallery-03",
+    "gallery-04",
+    "detail-01",
+    "detail-02"
+  ],
+  "detailImages": [
+    "detail-01",
+    "detail-02"
+  ],
+  "lifestyleImages": [
+    "lifestyle-01",
+    "lifestyle-02"
+  ],
+  "duplicates": [],
+  "recommendedMarketingUsage": [
+    "homepage hero rotation",
+    "luxury real-estate campaigns",
+    "premium banner ads",
+    "Middle East market collateral"
+  ],
+  "recommendedHeroes": {
+    "desktop": "hero-01",
+    "tablet": "hero-01",
+    "mobile": "hero-02"
+  },
+  "responsiveHeroNote": "Heroes are wide and symmetric; hero-02 (chandelier + central grey sofa) crops best to portrait for mobile."
+}

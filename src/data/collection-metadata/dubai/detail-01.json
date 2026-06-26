@@ -1,0 +1,44 @@
+{
+  "asset": "dubai-detail-01.jpeg",
+  "role": "detail-01",
+  "title": "Dubai Taupe Sofa Close-Up with Patterned Cushion",
+  "collection": "Dubai",
+  "collectionSlug": "dubai",
+  "sourceFile": "dubai/6-gigapixel-high fidelity v2-4x.jpeg",
+  "orientation": "landscape",
+  "containsPeople": false,
+  "containsSofa": true,
+  "containsChair": false,
+  "containsCoffeeTable": false,
+  "containsAccessories": true,
+  "sceneType": "furniture-closeup",
+  "brightness": "moody",
+  "dominantColor": "taupe grey",
+  "homepageScore": 60,
+  "luxuryScore": 88,
+  "recommendedUsage": [
+    "product-detail",
+    "detail",
+    "fabric-showcase"
+  ],
+  "altText": "Close-up of a taupe-grey Be4Best Dubai sofa with a damask-patterned accent cushion against a softly blurred evening skyline.",
+  "seoTitle": "Dubai Sofa Fabric Detail | Be4Best",
+  "seoDescription": "Detailed view of the Be4Best Dubai sofa upholstery and cushion styling in moody evening light.",
+  "aspectRatio": "3:2",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": true,
+  "suitableAs": [
+    "product page",
+    "gallery image",
+    "card thumbnail"
+  ],
+  "focalPoint": {
+    "x": 48,
+    "y": 55
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "center",
+  "textSafeArea": "none"
+}

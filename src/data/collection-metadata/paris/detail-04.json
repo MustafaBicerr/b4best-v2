@@ -1,0 +1,45 @@
+{
+  "asset": "paris-detail-04.jpeg",
+  "role": "detail-04",
+  "title": "Paris Armchair with Floor Lamp",
+  "collection": "Paris",
+  "collectionSlug": "paris",
+  "sourceFile": "paris/2-gigapixel-high fidelity v2-2x.jpeg",
+  "orientation": "portrait",
+  "containsPeople": false,
+  "containsSofa": false,
+  "containsChair": true,
+  "containsCoffeeTable": false,
+  "containsAccessories": true,
+  "sceneType": "furniture-closeup",
+  "brightness": "bright",
+  "dominantColor": "soft beige",
+  "homepageScore": 57,
+  "luxuryScore": 86,
+  "recommendedUsage": [
+    "product-detail",
+    "detail",
+    "portrait-banner"
+  ],
+  "altText": "Portrait studio-style view of a beige Be4Best Paris armchair with a knit throw beside a black arc floor lamp in a bright room.",
+  "seoTitle": "Paris Armchair Studio View | Be4Best",
+  "seoDescription": "Be4Best Paris beige armchair styled with a throw and floor lamp in a clean, bright setting.",
+  "aspectRatio": "2:3",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": true,
+  "suitableAs": [
+    "product page",
+    "card thumbnail",
+    "gallery image",
+    "mobile hero"
+  ],
+  "focalPoint": {
+    "x": 52,
+    "y": 55
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "center",
+  "textSafeArea": "top-left"
+}

@@ -1,0 +1,43 @@
+{
+  "asset": "dubai-gallery-01.jpeg",
+  "role": "gallery-01",
+  "title": "Dubai Living Room with Wood Slat Feature Wall",
+  "collection": "Dubai",
+  "collectionSlug": "dubai",
+  "sourceFile": "dubai/11-gigapixel-high fidelity v2-4x.jpeg",
+  "orientation": "landscape",
+  "containsPeople": false,
+  "containsSofa": true,
+  "containsChair": true,
+  "containsCoffeeTable": true,
+  "containsAccessories": false,
+  "sceneType": "interior-wide",
+  "brightness": "bright",
+  "dominantColor": "cream white",
+  "homepageScore": 88,
+  "luxuryScore": 90,
+  "recommendedUsage": [
+    "gallery",
+    "banner"
+  ],
+  "altText": "Bright Dubai living room with a cream sofa, two armchairs, a wood slat feature wall and a chandelier framing the distant Burj Khalifa.",
+  "seoTitle": "Dubai Living Room with Feature Wall | Be4Best",
+  "seoDescription": "Be4Best Dubai cream seating group against a warm wood slat wall with skyline views.",
+  "aspectRatio": "3:2",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": false,
+  "suitableAs": [
+    "section banner",
+    "gallery image",
+    "tablet hero"
+  ],
+  "focalPoint": {
+    "x": 48,
+    "y": 55
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "center",
+  "textSafeArea": "bottom-right"
+}

@@ -1,0 +1,44 @@
+{
+  "collection": "Milano",
+  "slug": "milano",
+  "theme": "Mediterranean villa elegance",
+  "style": "Sculptural bouclé, arched architecture, sun-washed earthy luxury",
+  "dominantColors": [
+    "ivory boucle",
+    "espresso black",
+    "warm sand",
+    "natural oak"
+  ],
+  "overallLuxuryScore": 95,
+  "assetCounts": {
+    "master": 4,
+    "homepage": 2,
+    "gallery": 1,
+    "detail": 0,
+    "lifestyle": 1
+  },
+  "recommendedHomepageImages": [
+    "homepage/milano-hero-01.jpg",
+    "homepage/milano-hero-02.jpg"
+  ],
+  "recommendedGalleryOrder": [
+    "gallery-01"
+  ],
+  "detailImages": [],
+  "lifestyleImages": [
+    "lifestyle-01"
+  ],
+  "duplicates": [],
+  "recommendedMarketingUsage": [
+    "flagship hero imagery",
+    "print catalogue covers",
+    "Mediterranean/resort campaigns",
+    "high-resolution large-format"
+  ],
+  "recommendedHeroes": {
+    "desktop": "hero-01",
+    "tablet": "hero-01",
+    "mobile": "gallery-01"
+  },
+  "responsiveHeroNote": "Both landscape heroes are wide; the portrait gallery-01 (sofa beneath arches) is the superior mobile/portrait hero."
+}

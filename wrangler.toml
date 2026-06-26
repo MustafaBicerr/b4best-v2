@@ -5,5 +5,5 @@ pages_build_output_dir = ".vercel/output/static"
 
 [[d1_databases]]
 binding = "DB"
-database_name = "b4best-assets"
-database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+database_name = "be4best-db"
+database_id = "21d5e9a9-f0f6-4e23-95cd-ccbb72f250a7"

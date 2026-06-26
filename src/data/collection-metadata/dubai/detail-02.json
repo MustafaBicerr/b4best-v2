@@ -1,0 +1,47 @@
+{
+  "asset": "dubai-detail-02.jpeg",
+  "role": "detail-02",
+  "title": "Dubai Bouclé Accent Armchair at Night",
+  "collection": "Dubai",
+  "collectionSlug": "dubai",
+  "sourceFile": "dubai/4-gigapixel-high fidelity v2-4x.jpeg",
+  "orientation": "portrait",
+  "containsPeople": false,
+  "containsSofa": false,
+  "containsChair": true,
+  "containsCoffeeTable": false,
+  "containsAccessories": false,
+  "sceneType": "furniture-closeup",
+  "brightness": "dark",
+  "dominantColor": "cream boucle",
+  "homepageScore": 55,
+  "luxuryScore": 90,
+  "recommendedUsage": [
+    "product-detail",
+    "detail",
+    "portrait-banner",
+    "mobile-hero"
+  ],
+  "altText": "Portrait close-up of a cream bouclé Be4Best Dubai accent armchair with a walnut leg, set against a night-time city skyline.",
+  "seoTitle": "Dubai Bouclé Accent Armchair | Be4Best",
+  "seoDescription": "Be4Best Dubai bouclé accent armchair photographed close-up against a glittering night skyline, ideal for vertical layouts.",
+  "aspectRatio": "9:10",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": true,
+  "suitableAs": [
+    "mobile hero",
+    "product page",
+    "card thumbnail",
+    "gallery image",
+    "section banner"
+  ],
+  "focalPoint": {
+    "x": 48,
+    "y": 58
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "center",
+  "textSafeArea": "top-right"
+}

@@ -1,0 +1,43 @@
+{
+  "asset": "lasvegas-lifestyle-02.jpg",
+  "role": "lifestyle-02",
+  "title": "Las Vegas Cozy Lounging by the Fireplace",
+  "collection": "Las Vegas",
+  "collectionSlug": "lasvegas",
+  "sourceFile": "lasvegas/8-gigapixel-high fidelity v2-2x.jpg",
+  "orientation": "landscape",
+  "containsPeople": true,
+  "containsSofa": true,
+  "containsChair": false,
+  "containsCoffeeTable": false,
+  "containsAccessories": true,
+  "sceneType": "lifestyle",
+  "brightness": "bright",
+  "dominantColor": "cream white",
+  "homepageScore": 80,
+  "luxuryScore": 85,
+  "recommendedUsage": [
+    "lifestyle",
+    "editorial",
+    "social"
+  ],
+  "altText": "Woman reading under a knit throw on a cream Be4Best Las Vegas sofa beside a stone fireplace in a warm, bright living room.",
+  "seoTitle": "Las Vegas Cozy Lifestyle | Be4Best",
+  "seoDescription": "Be4Best Las Vegas sofa in a cozy fireside lifestyle moment with a knit throw.",
+  "aspectRatio": "3:2",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": true,
+  "suitableAs": [
+    "section banner",
+    "gallery image"
+  ],
+  "focalPoint": {
+    "x": 45,
+    "y": 52
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "center",
+  "textSafeArea": "top-left"
+}

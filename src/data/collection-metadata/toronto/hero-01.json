@@ -1,0 +1,45 @@
+{
+  "asset": "toronto-hero-01.png",
+  "role": "hero-01",
+  "title": "Toronto Full Collection in Wood-Walled Lounge",
+  "collection": "Toronto",
+  "collectionSlug": "toronto",
+  "sourceFile": "b4b yeni ürünler/toronto/1.png",
+  "orientation": "landscape",
+  "containsPeople": false,
+  "containsSofa": true,
+  "containsChair": true,
+  "containsCoffeeTable": true,
+  "containsAccessories": true,
+  "sceneType": "interior-wide-collection",
+  "brightness": "bright",
+  "dominantColor": "cream beige",
+  "homepageScore": 95,
+  "luxuryScore": 93,
+  "recommendedUsage": [
+    "homepage-hero",
+    "banner",
+    "gallery"
+  ],
+  "altText": "Bright wood-walled lounge with two cream Toronto sofas, two rounded swivel armchairs and a low sculptural coffee table on a plush rug.",
+  "seoTitle": "Toronto Living Collection | Be4Best Furniture",
+  "seoDescription": "The Be4Best Toronto collection of cream sofas and two-tone swivel armchairs in a warm wood-walled lounge.",
+  "aspectRatio": "4:3",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": false,
+  "suitableAs": [
+    "desktop hero",
+    "tablet hero",
+    "section banner",
+    "gallery image"
+  ],
+  "focalPoint": {
+    "x": 50,
+    "y": 58
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "center",
+  "textSafeArea": "top-left"
+}

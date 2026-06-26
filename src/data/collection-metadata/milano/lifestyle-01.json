@@ -1,0 +1,43 @@
+{
+  "asset": "milano-lifestyle-01.jpg",
+  "role": "lifestyle-01",
+  "title": "Milano Morning Calm on the Bouclé Sofa",
+  "collection": "Milano",
+  "collectionSlug": "milano",
+  "sourceFile": "milano/5-gigapixel-high fidelity v2-2x.jpg",
+  "orientation": "landscape",
+  "containsPeople": true,
+  "containsSofa": true,
+  "containsChair": false,
+  "containsCoffeeTable": false,
+  "containsAccessories": true,
+  "sceneType": "lifestyle",
+  "brightness": "bright",
+  "dominantColor": "ivory boucle",
+  "homepageScore": 84,
+  "luxuryScore": 92,
+  "recommendedUsage": [
+    "lifestyle",
+    "editorial",
+    "social"
+  ],
+  "altText": "Woman in a robe relaxing with a phone under a throw on an ivory Be4Best Milano bouclé sofa in a sunlit Mediterranean room.",
+  "seoTitle": "Milano Bouclé Sofa Lifestyle | Be4Best",
+  "seoDescription": "Lifestyle scene of the Be4Best Milano bouclé sofa in a serene, sun-filled villa morning.",
+  "aspectRatio": "4:3",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": true,
+  "suitableAs": [
+    "section banner",
+    "gallery image"
+  ],
+  "focalPoint": {
+    "x": 48,
+    "y": 55
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "center",
+  "textSafeArea": "top-left"
+}

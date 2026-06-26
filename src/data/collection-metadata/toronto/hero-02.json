@@ -1,0 +1,45 @@
+{
+  "asset": "toronto-hero-02.png",
+  "role": "hero-02",
+  "title": "Toronto Symmetrical Lounge with Swivel Chairs",
+  "collection": "Toronto",
+  "collectionSlug": "toronto",
+  "sourceFile": "b4b yeni ürünler/toronto/3.png",
+  "orientation": "landscape",
+  "containsPeople": false,
+  "containsSofa": true,
+  "containsChair": true,
+  "containsCoffeeTable": true,
+  "containsAccessories": true,
+  "sceneType": "interior-wide-collection",
+  "brightness": "bright",
+  "dominantColor": "cream beige",
+  "homepageScore": 93,
+  "luxuryScore": 92,
+  "recommendedUsage": [
+    "homepage-hero",
+    "banner",
+    "gallery"
+  ],
+  "altText": "Symmetrical bright lounge with two cream Toronto sofas, two boucle-and-leather swivel armchairs and an organic coffee table before a wood wall.",
+  "seoTitle": "Toronto Symmetrical Lounge | Be4Best",
+  "seoDescription": "Be4Best Toronto cream sofas and swivel armchairs in a balanced, light-filled lounge.",
+  "aspectRatio": "4:3",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": false,
+  "suitableAs": [
+    "desktop hero",
+    "tablet hero",
+    "section banner",
+    "gallery image"
+  ],
+  "focalPoint": {
+    "x": 50,
+    "y": 55
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "center",
+  "textSafeArea": "top-left"
+}

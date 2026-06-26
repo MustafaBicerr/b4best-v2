@@ -25,7 +25,7 @@ export function MediaImage({
   alt,
   focalX,
   focalY,
-  textSafeArea,
+  textSafeArea: _textSafeArea,
   fill = false,
   aspectRatio,
   className,

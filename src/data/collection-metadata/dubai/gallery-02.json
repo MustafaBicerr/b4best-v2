@@ -1,0 +1,42 @@
+{
+  "asset": "dubai-gallery-02.jpeg",
+  "role": "gallery-02",
+  "title": "Dubai Marble Lounge with Cream Seating Group",
+  "collection": "Dubai",
+  "collectionSlug": "dubai",
+  "sourceFile": "dubai/9-gigapixel-high fidelity v2-4x.jpeg",
+  "orientation": "landscape",
+  "containsPeople": false,
+  "containsSofa": true,
+  "containsChair": true,
+  "containsCoffeeTable": true,
+  "containsAccessories": false,
+  "sceneType": "interior-wide",
+  "brightness": "bright",
+  "dominantColor": "cream white",
+  "homepageScore": 87,
+  "luxuryScore": 90,
+  "recommendedUsage": [
+    "gallery",
+    "product-context"
+  ],
+  "altText": "Cream Dubai sofa flanked by two matching armchairs on a marble floor with a daytime skyline visible through full-height glazing.",
+  "seoTitle": "Dubai Marble Lounge Collection | Be4Best",
+  "seoDescription": "Be4Best Dubai cream sofa and armchair group photographed in a marble-floored skyline lounge.",
+  "aspectRatio": "3:2",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": false,
+  "suitableAs": [
+    "section banner",
+    "gallery image"
+  ],
+  "focalPoint": {
+    "x": 50,
+    "y": 52
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "center",
+  "textSafeArea": "bottom-left"
+}

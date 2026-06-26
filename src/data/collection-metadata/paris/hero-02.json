@@ -1,0 +1,46 @@
+{
+  "asset": "paris-hero-02.jpeg",
+  "role": "hero-02",
+  "title": "Paris Panelled Salon with Eiffel Tower",
+  "collection": "Paris",
+  "collectionSlug": "paris",
+  "sourceFile": "paris/7-gigapixel-high fidelity v2-2x.jpeg",
+  "orientation": "landscape",
+  "containsPeople": false,
+  "containsSofa": true,
+  "containsChair": true,
+  "containsCoffeeTable": true,
+  "containsAccessories": true,
+  "sceneType": "interior-wide-collection",
+  "brightness": "bright",
+  "dominantColor": "camel brown",
+  "homepageScore": 93,
+  "luxuryScore": 93,
+  "recommendedUsage": [
+    "homepage-hero",
+    "banner",
+    "gallery"
+  ],
+  "altText": "Elegant panelled Paris salon with a camel sofa and two beige armchairs around a gold drum table, the Eiffel Tower centered beyond sheer curtains.",
+  "seoTitle": "Paris Classic Salon Furniture | Be4Best",
+  "seoDescription": "Be4Best Paris camel sofa and beige armchairs in a classic panelled salon with an Eiffel Tower view.",
+  "aspectRatio": "3:2",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": true,
+  "suitableAs": [
+    "desktop hero",
+    "tablet hero",
+    "mobile hero",
+    "section banner",
+    "gallery image"
+  ],
+  "focalPoint": {
+    "x": 50,
+    "y": 48
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "center",
+  "textSafeArea": "top-right"
+}

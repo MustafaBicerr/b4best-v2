@@ -4,8 +4,9 @@ import { notFound } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
 import { ChevronRight } from 'lucide-react';
 import { getCloudflareEnv } from '@/lib/cloudflare/env';
-import { getCollectionBySlug, getAssetsByCollection, STATIC_COLLECTIONS } from '@/lib/cloudflare/d1';
+import { getCollectionBySlug, STATIC_COLLECTIONS } from '@/lib/cloudflare/d1';
 import { collectionAsset } from '@/lib/assets/urls';
+import { loadCollectionGallery } from '@/lib/assets/metadata-loader';
 import { Container } from '@/components/ui/Container';
 import { Eyebrow, Heading, Body } from '@/components/ui/Typography';
 import { CollectionGallery } from '@/components/sections/CollectionGallery';
@@ -13,9 +14,12 @@ import { collectionSchema, breadcrumbSchema } from '@/lib/metadata/schemas';
 import { SITE_URL } from '@/config/site';
 import { slugToName } from '@/lib/utils/formatters';
 import { cn } from '@/lib/utils/cn';
-import type { CollectionSlug } from '@/types/collection';
 
-export const revalidate = 3600;
+// force-static + dynamicParams=false: fully pre-rendered, no server fallback function.
+// This satisfies @cloudflare/next-on-pages without requiring runtime='edge'
+// (which Next.js 15 disallows when generateStaticParams is also present).
+export const dynamic = 'force-static';
+export const dynamicParams = false;
 
 interface CollectionPageProps {
   params: Promise<{ locale: string; slug: string }>;
@@ -62,82 +66,19 @@ export async function generateMetadata({ params }: CollectionPageProps): Promise
 }
 
 /**
- * Per-collection gallery configuration derived from metadata JSON.
- * Only desktop_suitable images are included; mobile uses focalPoint.
+ * Hero image config per collection — only the primary hero that renders in
+ * the full-bleed hero section above the gallery needs special treatment.
+ * Extensions and focal points come directly from the metadata JSON via
+ * loadCollectionGallery; this map covers just the hero-01 asset.
  */
-const COLLECTION_ASSETS: Record<CollectionSlug, {
-  hero: { filename: string; ext: string; focalX: number; focalY: number };
-  gallery: { filename: string; ext: string; focalX?: number; focalY?: number }[];
-  detail: { filename: string; ext: string; focalX?: number; focalY?: number }[];
-}> = {
-  dubai: {
-    hero: { filename: 'dubai-hero-01', ext: 'jpeg', focalX: 50, focalY: 52 },
-    gallery: [
-      { filename: 'dubai-gallery-01', ext: 'jpeg' },
-      { filename: 'dubai-gallery-02', ext: 'jpeg' },
-      { filename: 'dubai-gallery-03', ext: 'jpeg' },
-      { filename: 'dubai-gallery-04', ext: 'jpeg' },
-    ],
-    detail: [
-      { filename: 'dubai-detail-01', ext: 'jpeg', focalX: 48, focalY: 55 },
-      { filename: 'dubai-detail-02', ext: 'jpeg' },
-    ],
-  },
-  milano: {
-    hero: { filename: 'milano-hero-01', ext: 'jpg', focalX: 50, focalY: 40 },
-    gallery: [{ filename: 'milano-gallery-01', ext: 'jpg' }],
-    detail: [],
-  },
-  havai: {
-    hero: { filename: 'havai-hero-01', ext: 'png', focalX: 50, focalY: 50 },
-    gallery: [],
-    detail: [
-      { filename: 'havai-detail-01', ext: 'png' },
-      { filename: 'havai-detail-02', ext: 'png' },
-    ],
-  },
-  toronto: {
-    hero: { filename: 'toronto-hero-01', ext: 'png', focalX: 50, focalY: 50 },
-    gallery: [
-      { filename: 'toronto-gallery-01', ext: 'png' },
-      { filename: 'toronto-gallery-02', ext: 'png' },
-    ],
-    detail: [{ filename: 'toronto-detail-01', ext: 'png' }],
-  },
-  lyon: {
-    hero: { filename: 'lyon-hero-01', ext: 'png', focalX: 50, focalY: 45 },
-    gallery: [
-      { filename: 'lyon-gallery-01', ext: 'png' },
-      { filename: 'lyon-gallery-02', ext: 'png' },
-      { filename: 'lyon-gallery-03', ext: 'png' },
-      { filename: 'lyon-gallery-04', ext: 'png' },
-    ],
-    detail: [],
-  },
-  paris: {
-    hero: { filename: 'paris-hero-01', ext: 'jpeg', focalX: 50, focalY: 45 },
-    gallery: [
-      { filename: 'paris-gallery-01', ext: 'jpg' },
-      { filename: 'paris-gallery-02', ext: 'jpg' },
-      { filename: 'paris-gallery-03', ext: 'jpg' },
-      { filename: 'paris-gallery-04', ext: 'jpg' },
-      { filename: 'paris-gallery-05', ext: 'jpg' },
-    ],
-    detail: [
-      { filename: 'paris-detail-01', ext: 'jpg' },
-      { filename: 'paris-detail-02', ext: 'jpg' },
-      { filename: 'paris-detail-03', ext: 'jpg' },
-      { filename: 'paris-detail-04', ext: 'jpg' },
-    ],
-  },
-  lasvegas: {
-    hero: { filename: 'lasvegas-hero-01', ext: 'jpeg', focalX: 50, focalY: 50 },
-    gallery: [{ filename: 'lasvegas-gallery-01', ext: 'jpeg' }],
-    detail: [
-      { filename: 'lasvegas-detail-01', ext: 'jpeg' },
-      { filename: 'lasvegas-detail-02', ext: 'jpeg' },
-    ],
-  },
+const HERO_CONFIG: Record<string, { filename: string; ext: string; focalX: number; focalY: number }> = {
+  dubai:    { filename: 'dubai-hero-01',    ext: 'jpeg', focalX: 50, focalY: 52 },
+  milano:   { filename: 'milano-hero-01',   ext: 'jpg',  focalX: 50, focalY: 40 },
+  havai:    { filename: 'havai-hero-01',    ext: 'png',  focalX: 50, focalY: 50 },
+  toronto:  { filename: 'toronto-hero-01',  ext: 'png',  focalX: 50, focalY: 50 },
+  lyon:     { filename: 'lyon-hero-01',     ext: 'png',  focalX: 50, focalY: 45 },
+  paris:    { filename: 'paris-hero-01',    ext: 'jpeg', focalX: 50, focalY: 45 },
+  lasvegas: { filename: 'lasvegas-hero-01', ext: 'jpeg', focalX: 50, focalY: 50 },
 };
 
 export default async function CollectionDetailPage({ params }: CollectionPageProps) {
@@ -155,22 +96,13 @@ export default async function CollectionDetailPage({ params }: CollectionPagePro
 
   if (!collection) notFound();
 
-  const assets = COLLECTION_ASSETS[slug as CollectionSlug];
-  const heroUrl = collectionAsset(slug, 'homepage', `${assets.hero.filename}.${assets.hero.ext}`);
+  const hero = HERO_CONFIG[slug] ?? { filename: `${slug}-hero-01`, ext: 'jpeg', focalX: 50, focalY: 50 };
+  const heroUrl = collectionAsset(slug, 'homepage', `${hero.filename}.${hero.ext}`);
 
-  const galleryImages = assets.gallery.map((g) => ({
-    src: collectionAsset(slug, 'gallery', `${g.filename}.${g.ext}`),
-    alt: `${collection.name} galeri görseli — Be4Best`,
-    focalX: g.focalX,
-    focalY: g.focalY,
-  }));
-
-  const detailImages = assets.detail.map((d) => ({
-    src: collectionAsset(slug, 'detail', `${d.filename}.${d.ext}`),
-    alt: `${collection.name} detay görseli — Be4Best`,
-    focalX: d.focalX,
-    focalY: d.focalY,
-  }));
+  // All gallery images loaded dynamically from metadata JSONs at build time.
+  // Includes gallery, detail, lifestyle and alternate hero shots — everything
+  // except the primary hero-01 which is already shown in the hero section.
+  const galleryImages = await loadCollectionGallery(slug);
 
   const jsonLd = [
     collectionSchema({
@@ -204,7 +136,7 @@ export default async function CollectionDetailPage({ params }: CollectionPagePro
           src={heroUrl}
           alt={`${collection.name} — Be4Best Furniture`}
           className="absolute inset-0 w-full h-full object-cover"
-          style={{ objectPosition: `${assets.hero.focalX}% ${assets.hero.focalY}%` }}
+          style={{ objectPosition: `${hero.focalX}% ${hero.focalY}%` }}
           fetchPriority="high"
           loading="eager"
         />
@@ -245,12 +177,8 @@ export default async function CollectionDetailPage({ params }: CollectionPagePro
         </Container>
       </section>
 
-      {/* Gallery */}
-      <CollectionGallery
-        slug={slug}
-        galleryImages={galleryImages}
-        detailImages={detailImages}
-      />
+      {/* Gallery — all collection images loaded from metadata at build time */}
+      <CollectionGallery galleryImages={galleryImages} />
 
       {/* Back link */}
       <section className="py-16 bg-cream border-t border-border-light">

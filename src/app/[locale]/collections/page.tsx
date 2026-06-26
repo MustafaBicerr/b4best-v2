@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
@@ -6,7 +7,7 @@ import { getCloudflareEnv } from '@/lib/cloudflare/env';
 import { getCollections, sortCollectionsByOrder } from '@/lib/cloudflare/d1';
 import { collectionAsset } from '@/lib/assets/urls';
 import { Container } from '@/components/ui/Container';
-import { Eyebrow, Heading, Body } from '@/components/ui/Typography';
+import { Eyebrow, Display, Body } from '@/components/ui/Typography';
 import { breadcrumbSchema } from '@/lib/metadata/schemas';
 import { SITE_URL } from '@/config/site';
 import { cn } from '@/lib/utils/cn';
@@ -74,9 +75,9 @@ export default async function CollectionsPage({ params }: CollectionsPageProps) 
       <section className="pt-32 pb-16 lg:pt-40 lg:pb-24 bg-dark">
         <Container className="text-center">
           <Eyebrow onDark className="mb-4">{t('pageTitle')}</Eyebrow>
-          <Heading as="h1" size="display" onDark className="mb-6">
+          <Display as="h1" onDark className="mb-6">
             {t('pageTitle')}
-          </Heading>
+          </Display>
           <Body onDark muted className="max-w-2xl mx-auto">
             {t('pageSubtitle')}
           </Body>
@@ -128,7 +129,6 @@ export default async function CollectionsPage({ params }: CollectionsPageProps) 
                           {collection.name}
                         </h2>
                         <p className="font-body text-sm text-muted mt-2 line-clamp-2">
-                          {/* @ts-expect-error dynamic key */}
                           {tc(`${collection.slug}.theme`)}
                         </p>
                       </div>

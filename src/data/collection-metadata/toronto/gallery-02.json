@@ -1,0 +1,43 @@
+{
+  "asset": "toronto-gallery-02.png",
+  "role": "gallery-02",
+  "title": "Toronto Sofa Styled with Artisan Pottery",
+  "collection": "Toronto",
+  "collectionSlug": "toronto",
+  "sourceFile": "b4b yeni ürünler/toronto/5.png",
+  "orientation": "landscape",
+  "containsPeople": false,
+  "containsSofa": true,
+  "containsChair": true,
+  "containsCoffeeTable": true,
+  "containsAccessories": true,
+  "sceneType": "interior-wide",
+  "brightness": "warm",
+  "dominantColor": "cream beige",
+  "homepageScore": 83,
+  "luxuryScore": 90,
+  "recommendedUsage": [
+    "gallery",
+    "product-context",
+    "styling-reference"
+  ],
+  "altText": "Cream Toronto sofa and swivel armchair styled with sculptural vases and pottery around a travertine coffee table beside a warm floor lamp.",
+  "seoTitle": "Toronto Sofa with Pottery Styling | Be4Best",
+  "seoDescription": "Be4Best Toronto cream sofa and swivel chair styled with artisan pottery and a travertine table.",
+  "aspectRatio": "4:3",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": false,
+  "suitableAs": [
+    "section banner",
+    "gallery image"
+  ],
+  "focalPoint": {
+    "x": 55,
+    "y": 55
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "right",
+  "textSafeArea": "top-left"
+}

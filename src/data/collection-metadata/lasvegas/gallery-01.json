@@ -1,0 +1,42 @@
+{
+  "asset": "lasvegas-gallery-01.jpeg",
+  "role": "gallery-01",
+  "title": "Las Vegas Living Room with Fireplace and Cactus",
+  "collection": "Las Vegas",
+  "collectionSlug": "lasvegas",
+  "sourceFile": "lasvegas/4-gigapixel-high fidelity v2-2x.jpeg",
+  "orientation": "landscape",
+  "containsPeople": false,
+  "containsSofa": true,
+  "containsChair": true,
+  "containsCoffeeTable": true,
+  "containsAccessories": false,
+  "sceneType": "interior-wide",
+  "brightness": "bright",
+  "dominantColor": "sand beige",
+  "homepageScore": 86,
+  "luxuryScore": 88,
+  "recommendedUsage": [
+    "gallery",
+    "product-context"
+  ],
+  "altText": "Bright Las Vegas living room with a beige sofa and textured armchair, a linear fireplace and a tall cactus framed by desert-view glazing.",
+  "seoTitle": "Las Vegas Fireplace Living Room | Be4Best",
+  "seoDescription": "Be4Best Las Vegas sofa and armchair styled beside a modern fireplace with desert views.",
+  "aspectRatio": "16:10",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": false,
+  "suitableAs": [
+    "section banner",
+    "gallery image"
+  ],
+  "focalPoint": {
+    "x": 48,
+    "y": 62
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "center",
+  "textSafeArea": "top-right"
+}

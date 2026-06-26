@@ -1,0 +1,47 @@
+{
+  "asset": "paris-detail-03.jpeg",
+  "role": "detail-03",
+  "title": "Paris Armchair at Golden Hour",
+  "collection": "Paris",
+  "collectionSlug": "paris",
+  "sourceFile": "paris/13-gigapixel-high fidelity v2-2x.jpeg",
+  "orientation": "portrait",
+  "containsPeople": false,
+  "containsSofa": false,
+  "containsChair": true,
+  "containsCoffeeTable": true,
+  "containsAccessories": true,
+  "sceneType": "furniture-closeup",
+  "brightness": "warm",
+  "dominantColor": "soft beige",
+  "homepageScore": 58,
+  "luxuryScore": 88,
+  "recommendedUsage": [
+    "product-detail",
+    "detail",
+    "portrait-banner",
+    "mobile-hero"
+  ],
+  "altText": "Portrait close-up of a beige Be4Best Paris armchair with a striped lumbar cushion, an orchid and gold side table, Eiffel Tower in warm light.",
+  "seoTitle": "Paris Armchair Golden Hour | Be4Best",
+  "seoDescription": "Be4Best Paris beige armchair in warm light with an Eiffel Tower backdrop, ideal for vertical layouts.",
+  "aspectRatio": "2:3",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": true,
+  "suitableAs": [
+    "mobile hero",
+    "product page",
+    "card thumbnail",
+    "gallery image",
+    "section banner"
+  ],
+  "focalPoint": {
+    "x": 50,
+    "y": 60
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "center",
+  "textSafeArea": "top-left"
+}

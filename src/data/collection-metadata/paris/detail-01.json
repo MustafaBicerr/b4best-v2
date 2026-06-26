@@ -1,0 +1,44 @@
+{
+  "asset": "paris-detail-01.jpeg",
+  "role": "detail-01",
+  "title": "Paris Camel Sofa Close-Up with Throw",
+  "collection": "Paris",
+  "collectionSlug": "paris",
+  "sourceFile": "paris/4-gigapixel-high fidelity v2-2x.jpeg",
+  "orientation": "landscape",
+  "containsPeople": false,
+  "containsSofa": true,
+  "containsChair": false,
+  "containsCoffeeTable": false,
+  "containsAccessories": true,
+  "sceneType": "furniture-closeup",
+  "brightness": "bright",
+  "dominantColor": "camel brown",
+  "homepageScore": 64,
+  "luxuryScore": 88,
+  "recommendedUsage": [
+    "product-detail",
+    "detail",
+    "fabric-showcase"
+  ],
+  "altText": "Close-up of a camel bouclé Be4Best Paris sofa with patterned cushions and a knit throw draped over one arm.",
+  "seoTitle": "Paris Camel Sofa Detail | Be4Best",
+  "seoDescription": "Detail of the Be4Best Paris camel bouclé sofa upholstery and cushion styling.",
+  "aspectRatio": "3:2",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": true,
+  "suitableAs": [
+    "product page",
+    "gallery image",
+    "card thumbnail"
+  ],
+  "focalPoint": {
+    "x": 45,
+    "y": 55
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "center",
+  "textSafeArea": "top-right"
+}

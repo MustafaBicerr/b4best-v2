@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { Container } from '@/components/ui/Container';
@@ -5,7 +6,7 @@ import { Eyebrow, Heading, Body } from '@/components/ui/Typography';
 import { aboutPageSchema, breadcrumbSchema } from '@/lib/metadata/schemas';
 import { SITE_URL } from '@/config/site';
 import { collectionAsset } from '@/lib/assets/urls';
-import { cn } from '@/lib/utils/cn';
+
 
 interface AboutPageProps {
   params: Promise<{ locale: string }>;

@@ -76,9 +76,10 @@ export function HeroSection({ locale }: HeroSectionProps) {
             <motion.div
               key={hero.src}
               className="absolute inset-0"
-              initial={prefersReducedMotion ? { opacity: 1 } : heroEntrance.hidden}
-              animate={prefersReducedMotion ? { opacity: 1 } : heroEntrance.visible}
-              exit={prefersReducedMotion ? { opacity: 0 } : heroEntrance.exit}
+              variants={prefersReducedMotion ? undefined : heroEntrance}
+              initial={prefersReducedMotion ? { opacity: 1 } : 'hidden'}
+              animate={prefersReducedMotion ? { opacity: 1 } : 'visible'}
+              exit={prefersReducedMotion ? { opacity: 0 } : 'exit'}
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img

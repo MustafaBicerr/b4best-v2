@@ -1,0 +1,47 @@
+{
+  "collection": "Toronto",
+  "slug": "toronto",
+  "theme": "Warm organic modern",
+  "style": "Plush cream sofas with two-tone leather-and-bouclé swivel chairs, walnut warmth",
+  "dominantColors": [
+    "cream beige",
+    "tan leather",
+    "walnut wood",
+    "travertine"
+  ],
+  "overallLuxuryScore": 93,
+  "assetCounts": {
+    "master": 6,
+    "homepage": 3,
+    "gallery": 2,
+    "detail": 1,
+    "lifestyle": 0
+  },
+  "recommendedHomepageImages": [
+    "homepage/toronto-hero-01.png",
+    "homepage/toronto-hero-02.png",
+    "homepage/toronto-hero-03.png"
+  ],
+  "recommendedGalleryOrder": [
+    "gallery-01",
+    "gallery-02",
+    "detail-01"
+  ],
+  "detailImages": [
+    "detail-01"
+  ],
+  "lifestyleImages": [],
+  "duplicates": [],
+  "recommendedMarketingUsage": [
+    "homepage hero rotation",
+    "warm modern campaigns",
+    "gallery storytelling",
+    "e-commerce product pages"
+  ],
+  "recommendedHeroes": {
+    "desktop": "hero-01",
+    "tablet": "hero-01",
+    "mobile": "gallery-01"
+  },
+  "responsiveHeroNote": "All three heroes are wide symmetric collection shots that crop poorly to portrait. gallery-01 is the best mobile fallback; the portrait detail-01 swivel chair is the strongest pure mobile/product asset. Collection would benefit from a dedicated portrait hero."
+}

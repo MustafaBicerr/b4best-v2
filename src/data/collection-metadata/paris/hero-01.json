@@ -1,0 +1,46 @@
+{
+  "asset": "paris-hero-01.jpeg",
+  "role": "hero-01",
+  "title": "Paris Panoramic Lounge with Centered Eiffel View",
+  "collection": "Paris",
+  "collectionSlug": "paris",
+  "sourceFile": "paris/3-gigapixel-high fidelity v2-2x.jpeg",
+  "orientation": "landscape",
+  "containsPeople": false,
+  "containsSofa": true,
+  "containsChair": true,
+  "containsCoffeeTable": true,
+  "containsAccessories": true,
+  "sceneType": "interior-wide-collection",
+  "brightness": "bright",
+  "dominantColor": "camel brown",
+  "homepageScore": 95,
+  "luxuryScore": 93,
+  "recommendedUsage": [
+    "homepage-hero",
+    "banner",
+    "gallery"
+  ],
+  "altText": "Bright Paris living room with two camel bouclé sofas and two beige armchairs symmetrically framing a centered Eiffel Tower through full-height windows.",
+  "seoTitle": "Paris Living Room Collection | Be4Best Furniture",
+  "seoDescription": "Be4Best Paris camel sofas and beige armchairs arranged around a centered Eiffel Tower view.",
+  "aspectRatio": "3:2",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": true,
+  "suitableAs": [
+    "desktop hero",
+    "tablet hero",
+    "mobile hero",
+    "section banner",
+    "gallery image"
+  ],
+  "focalPoint": {
+    "x": 50,
+    "y": 50
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "center",
+  "textSafeArea": "top-right"
+}

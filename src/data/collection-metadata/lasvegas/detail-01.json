@@ -1,0 +1,44 @@
+{
+  "asset": "lasvegas-detail-01.jpeg",
+  "role": "detail-01",
+  "title": "Las Vegas Sofa with Adjustable Headrests",
+  "collection": "Las Vegas",
+  "collectionSlug": "lasvegas",
+  "sourceFile": "lasvegas/7-gigapixel-high fidelity v2-2x.jpeg",
+  "orientation": "landscape",
+  "containsPeople": false,
+  "containsSofa": true,
+  "containsChair": false,
+  "containsCoffeeTable": false,
+  "containsAccessories": true,
+  "sceneType": "furniture-closeup",
+  "brightness": "bright",
+  "dominantColor": "sand beige",
+  "homepageScore": 66,
+  "luxuryScore": 89,
+  "recommendedUsage": [
+    "product-detail",
+    "detail",
+    "product-card"
+  ],
+  "altText": "Close product view of a sand-beige Be4Best Las Vegas sofa with raised adjustable headrests and a woven lumbar cushion on a stone floor.",
+  "seoTitle": "Las Vegas Sofa Product Detail | Be4Best",
+  "seoDescription": "Be4Best Las Vegas sofa shown close-up highlighting adjustable headrests and tailored upholstery.",
+  "aspectRatio": "3:2",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": true,
+  "suitableAs": [
+    "product page",
+    "gallery image",
+    "card thumbnail"
+  ],
+  "focalPoint": {
+    "x": 50,
+    "y": 58
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "center",
+  "textSafeArea": "top-left"
+}

@@ -1,0 +1,42 @@
+{
+  "asset": "lyon-gallery-01.png",
+  "role": "gallery-01",
+  "title": "Lyon Sectional in Taupe Media Lounge",
+  "collection": "Lyon",
+  "collectionSlug": "lyon",
+  "sourceFile": "b4b yeni ürünler/lyon/3.png",
+  "orientation": "landscape",
+  "containsPeople": false,
+  "containsSofa": true,
+  "containsChair": false,
+  "containsCoffeeTable": false,
+  "containsAccessories": true,
+  "sceneType": "interior-wide",
+  "brightness": "bright",
+  "dominantColor": "cream white",
+  "homepageScore": 85,
+  "luxuryScore": 90,
+  "recommendedUsage": [
+    "gallery",
+    "product-context"
+  ],
+  "altText": "Bright taupe-panelled media lounge with a cream Lyon serpentine sectional, a tan boucle ottoman and a wall-mounted television.",
+  "seoTitle": "Lyon Media Lounge Sectional | Be4Best",
+  "seoDescription": "Be4Best Lyon cream sectional in a calm taupe media lounge with a boucle ottoman.",
+  "aspectRatio": "4:3",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": false,
+  "suitableAs": [
+    "section banner",
+    "gallery image"
+  ],
+  "focalPoint": {
+    "x": 52,
+    "y": 60
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "center",
+  "textSafeArea": "top-left"
+}

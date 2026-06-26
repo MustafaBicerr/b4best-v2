@@ -1,0 +1,43 @@
+{
+  "asset": "paris-gallery-01.jpeg",
+  "role": "gallery-01",
+  "title": "Paris Classic Apartment with Gilt Mirror",
+  "collection": "Paris",
+  "collectionSlug": "paris",
+  "sourceFile": "paris/9-gigapixel-high fidelity v2-2x.jpeg",
+  "orientation": "landscape",
+  "containsPeople": false,
+  "containsSofa": true,
+  "containsChair": true,
+  "containsCoffeeTable": true,
+  "containsAccessories": true,
+  "sceneType": "interior-wide",
+  "brightness": "bright",
+  "dominantColor": "warm taupe",
+  "homepageScore": 87,
+  "luxuryScore": 90,
+  "recommendedUsage": [
+    "gallery",
+    "product-context"
+  ],
+  "altText": "Symmetrical Paris apartment with two camel sofas, beige armchairs and a gilt mirror between French balcony windows over a herringbone floor.",
+  "seoTitle": "Paris Classic Apartment Collection | Be4Best",
+  "seoDescription": "Be4Best Paris sofas and armchairs in a symmetrical Haussmann apartment with a gilt mirror.",
+  "aspectRatio": "3:2",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": false,
+  "suitableAs": [
+    "section banner",
+    "gallery image",
+    "tablet hero"
+  ],
+  "focalPoint": {
+    "x": 50,
+    "y": 55
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "center",
+  "textSafeArea": "top-left"
+}

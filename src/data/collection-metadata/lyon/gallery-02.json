@@ -1,0 +1,42 @@
+{
+  "asset": "lyon-gallery-02.png",
+  "role": "gallery-02",
+  "title": "Lyon Sectional with Walnut Cabinetry",
+  "collection": "Lyon",
+  "collectionSlug": "lyon",
+  "sourceFile": "b4b yeni ürünler/lyon/6.png",
+  "orientation": "landscape",
+  "containsPeople": false,
+  "containsSofa": true,
+  "containsChair": false,
+  "containsCoffeeTable": false,
+  "containsAccessories": true,
+  "sceneType": "interior-wide",
+  "brightness": "bright",
+  "dominantColor": "cream white",
+  "homepageScore": 84,
+  "luxuryScore": 91,
+  "recommendedUsage": [
+    "gallery",
+    "product-context"
+  ],
+  "altText": "Cream Lyon serpentine sectional in a refined room with walnut cabinetry, a marble fireplace and a dark stone-tiled floor.",
+  "seoTitle": "Lyon Walnut Room Sectional | Be4Best",
+  "seoDescription": "Be4Best Lyon cream sectional against warm walnut cabinetry and a marble fireplace.",
+  "aspectRatio": "2:1",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": false,
+  "suitableAs": [
+    "section banner",
+    "gallery image"
+  ],
+  "focalPoint": {
+    "x": 40,
+    "y": 55
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "left",
+  "textSafeArea": "bottom-right"
+}

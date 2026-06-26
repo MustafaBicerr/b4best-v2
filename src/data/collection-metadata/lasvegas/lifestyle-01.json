@@ -1,0 +1,43 @@
+{
+  "asset": "lasvegas-lifestyle-01.jpg",
+  "role": "lifestyle-01",
+  "title": "Las Vegas Sunlit Reading Moment",
+  "collection": "Las Vegas",
+  "collectionSlug": "lasvegas",
+  "sourceFile": "lasvegas/5-gigapixel-high fidelity v2-2x.jpg",
+  "orientation": "landscape",
+  "containsPeople": true,
+  "containsSofa": true,
+  "containsChair": false,
+  "containsCoffeeTable": true,
+  "containsAccessories": true,
+  "sceneType": "lifestyle",
+  "brightness": "bright",
+  "dominantColor": "cream white",
+  "homepageScore": 82,
+  "luxuryScore": 87,
+  "recommendedUsage": [
+    "lifestyle",
+    "editorial",
+    "social"
+  ],
+  "altText": "Woman in neutral loungewear reading a magazine on a cream Be4Best Las Vegas sofa in a sunlit, art-filled desert home.",
+  "seoTitle": "Las Vegas Sofa Lifestyle | Be4Best",
+  "seoDescription": "Lifestyle scene of a woman relaxing on the Be4Best Las Vegas sofa in bright morning light.",
+  "aspectRatio": "3:2",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": true,
+  "suitableAs": [
+    "section banner",
+    "gallery image"
+  ],
+  "focalPoint": {
+    "x": 42,
+    "y": 50
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "left",
+  "textSafeArea": "top-right"
+}

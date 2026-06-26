@@ -1,0 +1,51 @@
+{
+  "collection": "Las Vegas",
+  "slug": "lasvegas",
+  "theme": "Desert modern retreat",
+  "style": "Warm minimalism, textured neutrals, expansive desert glazing",
+  "dominantColors": [
+    "sand beige",
+    "warm taupe",
+    "stone grey",
+    "natural wood"
+  ],
+  "overallLuxuryScore": 90,
+  "assetCounts": {
+    "master": 8,
+    "homepage": 3,
+    "gallery": 1,
+    "detail": 2,
+    "lifestyle": 2
+  },
+  "recommendedHomepageImages": [
+    "homepage/lasvegas-hero-01.jpeg",
+    "homepage/lasvegas-hero-02.jpeg",
+    "homepage/lasvegas-hero-03.jpeg"
+  ],
+  "recommendedGalleryOrder": [
+    "gallery-01",
+    "detail-01",
+    "detail-02"
+  ],
+  "detailImages": [
+    "detail-01",
+    "detail-02"
+  ],
+  "lifestyleImages": [
+    "lifestyle-01",
+    "lifestyle-02"
+  ],
+  "duplicates": [],
+  "recommendedMarketingUsage": [
+    "lifestyle campaigns",
+    "desert/resort collateral",
+    "gallery storytelling",
+    "social editorial"
+  ],
+  "recommendedHeroes": {
+    "desktop": "hero-01",
+    "tablet": "hero-01",
+    "mobile": "hero-01"
+  },
+  "responsiveHeroNote": "hero-01 is a double-height shot whose vertical architecture crops beautifully to every device — universal hero."
+}

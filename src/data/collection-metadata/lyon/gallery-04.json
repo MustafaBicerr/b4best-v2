@@ -1,0 +1,42 @@
+{
+  "asset": "lyon-gallery-04.png",
+  "role": "gallery-04",
+  "title": "Lyon Sectional Against Grey Panelling",
+  "collection": "Lyon",
+  "collectionSlug": "lyon",
+  "sourceFile": "b4b yeni ürünler/lyon/7.png",
+  "orientation": "landscape",
+  "containsPeople": false,
+  "containsSofa": true,
+  "containsChair": false,
+  "containsCoffeeTable": false,
+  "containsAccessories": true,
+  "sceneType": "interior-wide",
+  "brightness": "bright",
+  "dominantColor": "cream white",
+  "homepageScore": 80,
+  "luxuryScore": 89,
+  "recommendedUsage": [
+    "gallery",
+    "product-context"
+  ],
+  "altText": "Cream Lyon serpentine sofa centered against dark grey panelled cabinetry with a linear fireplace and a charcoal area rug.",
+  "seoTitle": "Lyon Grey Panel Sectional | Be4Best",
+  "seoDescription": "Be4Best Lyon cream curved sofa staged against elegant dark grey panelling.",
+  "aspectRatio": "2:1",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": false,
+  "suitableAs": [
+    "section banner",
+    "gallery image"
+  ],
+  "focalPoint": {
+    "x": 50,
+    "y": 58
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "center",
+  "textSafeArea": "top-left"
+}

@@ -1,0 +1,43 @@
+{
+  "asset": "paris-gallery-03.jpg",
+  "role": "gallery-03",
+  "title": "Paris Sunset Salon with Eiffel View",
+  "collection": "Paris",
+  "collectionSlug": "paris",
+  "sourceFile": "paris/11-gigapixel-high fidelity v2-2x.jpg",
+  "orientation": "landscape",
+  "containsPeople": false,
+  "containsSofa": true,
+  "containsChair": true,
+  "containsCoffeeTable": true,
+  "containsAccessories": true,
+  "sceneType": "interior-wide",
+  "brightness": "warm",
+  "dominantColor": "camel brown",
+  "homepageScore": 85,
+  "luxuryScore": 90,
+  "recommendedUsage": [
+    "gallery",
+    "product-context",
+    "banner"
+  ],
+  "altText": "Warm Paris salon at golden hour with a camel sofa and two beige armchairs around a gold-base marble table, the Eiffel Tower glowing beyond.",
+  "seoTitle": "Paris Sunset Salon | Be4Best",
+  "seoDescription": "Be4Best Paris camel sofa and armchairs in a golden-hour salon with an Eiffel Tower view.",
+  "aspectRatio": "3:2",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": false,
+  "suitableAs": [
+    "section banner",
+    "gallery image"
+  ],
+  "focalPoint": {
+    "x": 55,
+    "y": 55
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "right",
+  "textSafeArea": "bottom-left"
+}

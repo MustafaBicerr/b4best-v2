@@ -1,0 +1,42 @@
+{
+  "asset": "lyon-gallery-03.png",
+  "role": "gallery-03",
+  "title": "Lyon Minimal Sectional with Cove Lighting",
+  "collection": "Lyon",
+  "collectionSlug": "lyon",
+  "sourceFile": "b4b yeni ürünler/lyon/8.png",
+  "orientation": "landscape",
+  "containsPeople": false,
+  "containsSofa": true,
+  "containsChair": false,
+  "containsCoffeeTable": false,
+  "containsAccessories": false,
+  "sceneType": "interior-wide",
+  "brightness": "bright",
+  "dominantColor": "cream white",
+  "homepageScore": 82,
+  "luxuryScore": 90,
+  "recommendedUsage": [
+    "gallery",
+    "product-context"
+  ],
+  "altText": "Minimalist room with a cream Lyon curved sectional, dark grey cabinetry, a linear fireplace and warm cove lighting over a charcoal rug.",
+  "seoTitle": "Lyon Minimalist Sectional | Be4Best",
+  "seoDescription": "Be4Best Lyon cream curved sectional in a moody minimalist room with cove lighting.",
+  "aspectRatio": "3:2",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": false,
+  "suitableAs": [
+    "section banner",
+    "gallery image"
+  ],
+  "focalPoint": {
+    "x": 45,
+    "y": 60
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "center",
+  "textSafeArea": "top-left"
+}

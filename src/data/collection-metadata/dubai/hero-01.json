@@ -1,0 +1,45 @@
+{
+  "asset": "dubai-hero-01.jpeg",
+  "role": "hero-01",
+  "title": "Dubai Symmetrical Skyline Living Room",
+  "collection": "Dubai",
+  "collectionSlug": "dubai",
+  "sourceFile": "dubai/7-gigapixel-high fidelity v2-4x.jpeg",
+  "orientation": "landscape",
+  "containsPeople": false,
+  "containsSofa": true,
+  "containsChair": true,
+  "containsCoffeeTable": true,
+  "containsAccessories": false,
+  "sceneType": "interior-wide-collection",
+  "brightness": "bright",
+  "dominantColor": "warm beige",
+  "homepageScore": 97,
+  "luxuryScore": 96,
+  "recommendedUsage": [
+    "homepage-hero",
+    "banner",
+    "gallery"
+  ],
+  "altText": "Luxurious Dubai penthouse living room with two beige sofas and two armchairs symmetrically arranged facing the Burj Khalifa skyline through floor-to-ceiling windows in bright daylight.",
+  "seoTitle": "Dubai Luxury Living Room Collection | Be4Best Furniture",
+  "seoDescription": "Premium Be4Best Dubai collection styled in a bright skyline penthouse with twin sofas and armchairs facing the Burj Khalifa.",
+  "aspectRatio": "3:2",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": false,
+  "suitableAs": [
+    "desktop hero",
+    "tablet hero",
+    "section banner",
+    "gallery image"
+  ],
+  "focalPoint": {
+    "x": 50,
+    "y": 52
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "center",
+  "textSafeArea": "bottom-left"
+}

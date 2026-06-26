@@ -1,0 +1,46 @@
+{
+  "asset": "toronto-detail-01.png",
+  "role": "detail-01",
+  "title": "Toronto Two-Tone Swivel Armchair Close-Up",
+  "collection": "Toronto",
+  "collectionSlug": "toronto",
+  "sourceFile": "b4b yeni ürünler/toronto/4.png",
+  "orientation": "portrait",
+  "containsPeople": false,
+  "containsSofa": true,
+  "containsChair": true,
+  "containsCoffeeTable": false,
+  "containsAccessories": true,
+  "sceneType": "furniture-closeup",
+  "brightness": "bright",
+  "dominantColor": "cream boucle",
+  "homepageScore": 66,
+  "luxuryScore": 92,
+  "recommendedUsage": [
+    "product-detail",
+    "detail",
+    "fabric-showcase",
+    "product-card"
+  ],
+  "altText": "Close-up of a Be4Best Toronto swivel armchair showing the cream boucle seat, tan leather back and dark metal swivel base, with a patterned cushion.",
+  "seoTitle": "Toronto Swivel Armchair Detail | Be4Best",
+  "seoDescription": "Detail of the Be4Best Toronto swivel armchair's cream boucle, tan leather back and metal base.",
+  "aspectRatio": "7:8",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": true,
+  "suitableAs": [
+    "mobile hero",
+    "product page",
+    "card thumbnail",
+    "gallery image"
+  ],
+  "focalPoint": {
+    "x": 55,
+    "y": 55
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "center",
+  "textSafeArea": "top-left"
+}

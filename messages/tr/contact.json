@@ -15,9 +15,13 @@
         "label": "Adres",
         "value": "Kayseri, Türkiye"
       },
-      "phone": {
-        "label": "Telefon",
-        "value": "+90 532 123 45 67"
+      "phone1": {
+        "label": "Ahmet Buğra Ok",
+        "value": "+90 507 191 73 19"
+      },
+      "phone2": {
+        "label": "Nuri Ok",
+        "value": "+90 554 004 20 77"
       },
       "email": {
         "label": "E-posta",

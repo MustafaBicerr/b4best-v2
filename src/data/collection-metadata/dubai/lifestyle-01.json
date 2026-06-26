@@ -1,0 +1,44 @@
+{
+  "asset": "dubai-lifestyle-01.jpeg",
+  "role": "lifestyle-01",
+  "title": "Dubai Evening Relaxation on the Sofa",
+  "collection": "Dubai",
+  "collectionSlug": "dubai",
+  "sourceFile": "dubai/1-gigapixel-high fidelity v2-4x.jpeg",
+  "orientation": "landscape",
+  "containsPeople": true,
+  "containsSofa": true,
+  "containsChair": false,
+  "containsCoffeeTable": true,
+  "containsAccessories": true,
+  "sceneType": "lifestyle",
+  "brightness": "warm",
+  "dominantColor": "warm grey",
+  "homepageScore": 80,
+  "luxuryScore": 88,
+  "recommendedUsage": [
+    "lifestyle",
+    "editorial",
+    "social"
+  ],
+  "altText": "Woman in cream loungewear reading a newspaper while reclining on a dark Be4Best Dubai sofa, warm evening skyline behind her.",
+  "seoTitle": "Dubai Sofa Lifestyle Scene | Be4Best",
+  "seoDescription": "Lifestyle image of a woman relaxing on the Be4Best Dubai sofa with a warm evening skyline.",
+  "aspectRatio": "3:2",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": true,
+  "suitableAs": [
+    "section banner",
+    "gallery image",
+    "desktop hero"
+  ],
+  "focalPoint": {
+    "x": 40,
+    "y": 48
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "left",
+  "textSafeArea": "top-right"
+}

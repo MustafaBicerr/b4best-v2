@@ -1,0 +1,45 @@
+{
+  "asset": "dubai-hero-03.jpeg",
+  "role": "hero-03",
+  "title": "Dubai Airy Daylight Lounge with Burj Khalifa View",
+  "collection": "Dubai",
+  "collectionSlug": "dubai",
+  "sourceFile": "dubai/3-gigapixel-high fidelity v2-4x.jpeg",
+  "orientation": "landscape",
+  "containsPeople": false,
+  "containsSofa": true,
+  "containsChair": true,
+  "containsCoffeeTable": true,
+  "containsAccessories": false,
+  "sceneType": "interior-wide-collection",
+  "brightness": "bright",
+  "dominantColor": "cream white",
+  "homepageScore": 93,
+  "luxuryScore": 92,
+  "recommendedUsage": [
+    "homepage-hero",
+    "banner",
+    "gallery"
+  ],
+  "altText": "Bright minimalist Dubai living room with a cream sofa and accent armchair, glossy marble floors and a panoramic Burj Khalifa view under soft daylight.",
+  "seoTitle": "Dubai Daylight Living Room | Be4Best Furniture",
+  "seoDescription": "Airy Be4Best Dubai living set with marble floors and a Burj Khalifa skyline backdrop, ideal as a hero banner.",
+  "aspectRatio": "3:2",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": false,
+  "suitableAs": [
+    "desktop hero",
+    "tablet hero",
+    "section banner",
+    "gallery image"
+  ],
+  "focalPoint": {
+    "x": 52,
+    "y": 55
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "right",
+  "textSafeArea": "bottom-left"
+}

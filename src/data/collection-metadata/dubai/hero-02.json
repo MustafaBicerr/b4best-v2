@@ -1,0 +1,46 @@
+{
+  "asset": "dubai-hero-02.png",
+  "role": "hero-02",
+  "title": "Dubai Evening Penthouse Under Chandelier",
+  "collection": "Dubai",
+  "collectionSlug": "dubai",
+  "sourceFile": "dubai/8-gigapixel-high fidelity v2-4x.png",
+  "orientation": "landscape",
+  "containsPeople": false,
+  "containsSofa": true,
+  "containsChair": true,
+  "containsCoffeeTable": true,
+  "containsAccessories": true,
+  "sceneType": "interior-wide-collection",
+  "brightness": "bright",
+  "dominantColor": "warm cream",
+  "homepageScore": 95,
+  "luxuryScore": 96,
+  "recommendedUsage": [
+    "homepage-hero",
+    "banner",
+    "gallery"
+  ],
+  "altText": "Elegant Dubai living room at dusk with cream and grey sofas, two armchairs, a round wooden coffee table and a modern bubble chandelier overlooking the illuminated city skyline.",
+  "seoTitle": "Dubai Evening Penthouse Furniture Set | Be4Best",
+  "seoDescription": "Be4Best Dubai seating collection in a dusk penthouse with a sculptural chandelier and panoramic illuminated skyline.",
+  "aspectRatio": "3:2",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": true,
+  "suitableAs": [
+    "desktop hero",
+    "tablet hero",
+    "mobile hero",
+    "section banner",
+    "gallery image"
+  ],
+  "focalPoint": {
+    "x": 50,
+    "y": 50
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "center",
+  "textSafeArea": "bottom-left"
+}

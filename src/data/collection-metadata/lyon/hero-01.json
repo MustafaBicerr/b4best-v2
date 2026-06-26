@@ -1,0 +1,46 @@
+{
+  "asset": "lyon-hero-01.png",
+  "role": "hero-01",
+  "title": "Lyon Double-Height Penthouse with Curved Sectional",
+  "collection": "Lyon",
+  "collectionSlug": "lyon",
+  "sourceFile": "b4b yeni ürünler/lyon/1.png",
+  "orientation": "landscape",
+  "containsPeople": false,
+  "containsSofa": true,
+  "containsChair": false,
+  "containsCoffeeTable": true,
+  "containsAccessories": true,
+  "sceneType": "interior-wide-collection",
+  "brightness": "bright",
+  "dominantColor": "cream white",
+  "homepageScore": 95,
+  "luxuryScore": 93,
+  "recommendedUsage": [
+    "homepage-hero",
+    "banner",
+    "gallery"
+  ],
+  "altText": "Soaring double-height penthouse with a cream serpentine Lyon sectional, round ottoman, fireplace and a linear chandelier beside full-height windows.",
+  "seoTitle": "Lyon Curved Sectional Collection | Be4Best",
+  "seoDescription": "Be4Best Lyon cream serpentine sectional in a grand double-height penthouse with a sculptural chandelier.",
+  "aspectRatio": "4:3",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": true,
+  "suitableAs": [
+    "desktop hero",
+    "tablet hero",
+    "mobile hero",
+    "section banner",
+    "gallery image"
+  ],
+  "focalPoint": {
+    "x": 50,
+    "y": 58
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "center",
+  "textSafeArea": "top-left"
+}

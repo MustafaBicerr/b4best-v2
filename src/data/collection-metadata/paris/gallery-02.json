@@ -1,0 +1,42 @@
+{
+  "asset": "paris-gallery-02.jpeg",
+  "role": "gallery-02",
+  "title": "Paris Haussmann Salon with Marble Fireplace",
+  "collection": "Paris",
+  "collectionSlug": "paris",
+  "sourceFile": "paris/10-gigapixel-high fidelity v2-2x.jpeg",
+  "orientation": "landscape",
+  "containsPeople": false,
+  "containsSofa": true,
+  "containsChair": true,
+  "containsCoffeeTable": true,
+  "containsAccessories": true,
+  "sceneType": "interior-wide",
+  "brightness": "bright",
+  "dominantColor": "warm taupe",
+  "homepageScore": 86,
+  "luxuryScore": 91,
+  "recommendedUsage": [
+    "gallery",
+    "product-context"
+  ],
+  "altText": "Ornate Haussmann Paris salon with a camel sofa, two beige armchairs, a marble fireplace and gilt mirrors over a herringbone parquet floor.",
+  "seoTitle": "Paris Haussmann Salon | Be4Best",
+  "seoDescription": "Be4Best Paris seating in an ornate Haussmann salon with marble fireplace and gilt details.",
+  "aspectRatio": "3:2",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": false,
+  "suitableAs": [
+    "section banner",
+    "gallery image"
+  ],
+  "focalPoint": {
+    "x": 50,
+    "y": 58
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "center",
+  "textSafeArea": "top-right"
+}

@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
@@ -5,7 +6,7 @@ import { Container } from '@/components/ui/Container';
 import { Eyebrow, Heading, Body } from '@/components/ui/Typography';
 import { ContactForm } from '@/components/sections/ContactForm';
 import { contactPageSchema, breadcrumbSchema } from '@/lib/metadata/schemas';
-import { SITE_URL, SITE_CONFIG } from '@/config/site';
+import { SITE_URL, SITE_CONFIG, PHONES } from '@/config/site';
 
 interface ContactPageProps {
   params: Promise<{ locale: string }>;
@@ -49,9 +50,15 @@ export default async function ContactPage({ params }: ContactPageProps) {
     },
     {
       icon: Phone,
-      label: t('info.phone.label'),
-      value: t('info.phone.value'),
-      href: `tel:${SITE_CONFIG.socialLinks.phone}`,
+      label: t('info.phone1.label'),
+      value: t('info.phone1.value'),
+      href: `tel:${PHONES[0].number}`,
+    },
+    {
+      icon: Phone,
+      label: t('info.phone2.label'),
+      value: t('info.phone2.value'),
+      href: `tel:${PHONES[1].number}`,
     },
     {
       icon: Mail,

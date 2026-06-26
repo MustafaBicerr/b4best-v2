@@ -1,0 +1,61 @@
+{
+  "collection": "Lyon",
+  "slug": "lyon",
+  "theme": "Sculptural curved sectional",
+  "style": "Organic serpentine modular seating, refined neutrals, architectural interiors",
+  "dominantColors": [
+    "cream white",
+    "warm tan",
+    "charcoal",
+    "walnut"
+  ],
+  "overallLuxuryScore": 92,
+  "assetCounts": {
+    "master": 9,
+    "homepage": 3,
+    "gallery": 4,
+    "detail": 0,
+    "lifestyle": 0
+  },
+  "recommendedHomepageImages": [
+    "homepage/lyon-hero-01.png",
+    "homepage/lyon-hero-02.png",
+    "homepage/lyon-hero-03.png"
+  ],
+  "recommendedGalleryOrder": [
+    "gallery-01",
+    "gallery-02",
+    "gallery-03",
+    "gallery-04"
+  ],
+  "detailImages": [],
+  "lifestyleImages": [],
+  "duplicates": [
+    {
+      "file": "master/lyon-master-04.png",
+      "source": "lyon/4.png",
+      "primary": "gallery/lyon-gallery-01.png (source lyon/3.png)",
+      "type": "exact duplicate (same resolution)",
+      "reason": "Pixel-identical second copy of lyon/3; retained as a secondary alternate."
+    },
+    {
+      "file": "master/lyon-master-09.png",
+      "source": "lyon/9.png",
+      "primary": "homepage/lyon-hero-01.png (source lyon/1.png)",
+      "type": "exact-content / lower-resolution",
+      "reason": "1184x864 downscale of the 4736x3456 lyon/1 render; keep high-res as primary."
+    }
+  ],
+  "recommendedMarketingUsage": [
+    "modern luxury campaigns",
+    "architectural editorial",
+    "homepage hero rotation",
+    "gallery storytelling"
+  ],
+  "recommendedHeroes": {
+    "desktop": "hero-01",
+    "tablet": "hero-01",
+    "mobile": "hero-01"
+  },
+  "responsiveHeroNote": "hero-01 is a double-height penthouse; its vertical proportions work on all devices — universal hero."
+}

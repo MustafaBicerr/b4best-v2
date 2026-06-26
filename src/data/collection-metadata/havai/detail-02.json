@@ -1,0 +1,45 @@
+{
+  "asset": "havai-detail-02.png",
+  "role": "detail-02",
+  "title": "Havai Armchair Studio Product Shot",
+  "collection": "Havai",
+  "collectionSlug": "havai",
+  "sourceFile": "b4b yeni ürünler/havai/2.png",
+  "orientation": "landscape",
+  "containsPeople": false,
+  "containsSofa": false,
+  "containsChair": true,
+  "containsCoffeeTable": false,
+  "containsAccessories": true,
+  "sceneType": "product-studio",
+  "brightness": "bright",
+  "dominantColor": "cream chenille",
+  "homepageScore": 70,
+  "luxuryScore": 93,
+  "recommendedUsage": [
+    "product-detail",
+    "detail",
+    "ecommerce-cutout",
+    "product-card"
+  ],
+  "altText": "Studio product photo of the cream chenille Be4Best Havai armchair with tan leather strap and brass ring detail on a clean white background.",
+  "seoTitle": "Havai Armchair Product Photo | Be4Best",
+  "seoDescription": "Be4Best Havai cream chenille armchair with leather strap detailing, isolated on white for e-commerce.",
+  "aspectRatio": "4:3",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": true,
+  "suitableAs": [
+    "product page",
+    "card thumbnail",
+    "gallery image"
+  ],
+  "focalPoint": {
+    "x": 50,
+    "y": 55
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "center",
+  "textSafeArea": "left"
+}

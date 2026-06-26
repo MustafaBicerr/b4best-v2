@@ -1,0 +1,71 @@
+{
+  "collection": "Paris",
+  "slug": "paris",
+  "theme": "Parisian apartment romance",
+  "style": "Classic Haussmann elegance, camel & bouclé seating, Eiffel views, gold accents",
+  "dominantColors": [
+    "camel brown",
+    "soft beige",
+    "warm taupe",
+    "brushed gold"
+  ],
+  "overallLuxuryScore": 92,
+  "assetCounts": {
+    "master": 14,
+    "homepage": 3,
+    "gallery": 5,
+    "detail": 4,
+    "lifestyle": 0
+  },
+  "recommendedHomepageImages": [
+    "homepage/paris-hero-01.jpeg",
+    "homepage/paris-hero-02.jpeg",
+    "homepage/paris-hero-03.jpeg"
+  ],
+  "recommendedGalleryOrder": [
+    "gallery-01",
+    "gallery-02",
+    "gallery-03",
+    "gallery-04",
+    "gallery-05",
+    "detail-01",
+    "detail-02",
+    "detail-03",
+    "detail-04"
+  ],
+  "detailImages": [
+    "detail-01",
+    "detail-02",
+    "detail-03",
+    "detail-04"
+  ],
+  "lifestyleImages": [],
+  "duplicates": [
+    {
+      "file": "master/paris-master-05.jpeg",
+      "source": "paris/4.jpeg",
+      "primary": "detail/paris-detail-01.jpeg (source paris/4-gigapixel)",
+      "type": "exact-content / lower-resolution",
+      "reason": "1248x832 downscale of the 2496x1664 gigapixel render; keep gigapixel as primary."
+    },
+    {
+      "file": "master/paris-master-13.jpeg",
+      "source": "paris/12-gigapixel",
+      "primary": "gallery/paris-gallery-03.jpg (source paris/11-gigapixel)",
+      "type": "near-identical render",
+      "reason": "Same scene, lighting and composition as paris/11; retained as a secondary alternate."
+    }
+  ],
+  "recommendedMarketingUsage": [
+    "European market campaigns",
+    "romantic editorial",
+    "homepage hero rotation",
+    "gallery storytelling"
+  ],
+  "recommendedHeroes": {
+    "desktop": "hero-01",
+    "tablet": "hero-01",
+    "mobile": "hero-02"
+  },
+  "responsiveHeroNote": "hero-02 centers the Eiffel Tower directly above the sofa, giving the strongest vertical (mobile) crop."
+}

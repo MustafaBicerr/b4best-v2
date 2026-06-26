@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
-import { COLLECTION_ORDER, SITE_CONFIG } from '@/config/site';
+import { COLLECTION_ORDER, SITE_CONFIG, PHONES } from '@/config/site';
 import { slugToName } from '@/lib/utils/formatters';
 import { Container } from '@/components/ui/Container';
 import { Instagram } from 'lucide-react';
@@ -89,15 +89,19 @@ export async function Footer({ locale }: FooterProps) {
               {t('footer.contact')}
             </h3>
             <div className="space-y-2">
-              <a
-                href={`tel:${SITE_CONFIG.socialLinks.phone}`}
-                className="block font-body text-sm text-on-dark/60 hover:text-gold transition-colors duration-200"
-              >
-                {SITE_CONFIG.socialLinks.phone}
-              </a>
+              {PHONES.map((p) => (
+                <a
+                  key={p.number}
+                  href={`tel:${p.number}`}
+                  className="flex flex-col font-body text-sm text-on-dark/60 hover:text-gold transition-colors duration-200"
+                >
+                  <span>{p.display}</span>
+                  <span className="text-xs text-on-dark/35">{p.name}</span>
+                </a>
+              ))}
               <a
                 href={`mailto:${SITE_CONFIG.socialLinks.email}`}
-                className="block font-body text-sm text-on-dark/60 hover:text-gold transition-colors duration-200"
+                className="block font-body text-sm text-on-dark/60 hover:text-gold transition-colors duration-200 mt-1"
               >
                 {SITE_CONFIG.socialLinks.email}
               </a>

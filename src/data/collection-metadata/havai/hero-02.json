@@ -1,0 +1,45 @@
+{
+  "asset": "havai-hero-02.png",
+  "role": "hero-02",
+  "title": "Havai Symmetrical Lounge with Table Lamps",
+  "collection": "Havai",
+  "collectionSlug": "havai",
+  "sourceFile": "b4b yeni ürünler/havai/3.png",
+  "orientation": "landscape",
+  "containsPeople": false,
+  "containsSofa": true,
+  "containsChair": true,
+  "containsCoffeeTable": true,
+  "containsAccessories": true,
+  "sceneType": "interior-wide-collection",
+  "brightness": "warm",
+  "dominantColor": "cream chenille",
+  "homepageScore": 94,
+  "luxuryScore": 95,
+  "recommendedUsage": [
+    "homepage-hero",
+    "banner",
+    "gallery"
+  ],
+  "altText": "Symmetrical warm lounge with two cream Havai sofas facing each other, two armchairs and a sculptural coffee table flanked by table lamps.",
+  "seoTitle": "Havai Symmetrical Lounge | Be4Best",
+  "seoDescription": "Be4Best Havai cream sofas and armchairs in a softly lit symmetrical lounge.",
+  "aspectRatio": "4:3",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": false,
+  "suitableAs": [
+    "desktop hero",
+    "tablet hero",
+    "section banner",
+    "gallery image"
+  ],
+  "focalPoint": {
+    "x": 50,
+    "y": 52
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "center",
+  "textSafeArea": "top-left"
+}

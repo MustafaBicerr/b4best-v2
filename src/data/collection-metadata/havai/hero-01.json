@@ -1,0 +1,46 @@
+{
+  "asset": "havai-hero-01.png",
+  "role": "hero-01",
+  "title": "Havai Full Collection in Wood-Panelled Lounge",
+  "collection": "Havai",
+  "collectionSlug": "havai",
+  "sourceFile": "b4b yeni ürünler/havai/4.png",
+  "orientation": "landscape",
+  "containsPeople": false,
+  "containsSofa": true,
+  "containsChair": true,
+  "containsCoffeeTable": true,
+  "containsAccessories": true,
+  "sceneType": "interior-wide-collection",
+  "brightness": "bright",
+  "dominantColor": "cream chenille",
+  "homepageScore": 96,
+  "luxuryScore": 95,
+  "recommendedUsage": [
+    "homepage-hero",
+    "banner",
+    "gallery",
+    "product-launch"
+  ],
+  "altText": "Warm wood-panelled lounge with two cream Havai sofas and two matching armchairs around a low organic coffee table, daylight from full-height glazing.",
+  "seoTitle": "Havai Signature Collection | Be4Best Furniture",
+  "seoDescription": "The Be4Best Havai signature collection of cream chenille sofas and armchairs in a warm wood-panelled lounge.",
+  "aspectRatio": "4:3",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": false,
+  "suitableAs": [
+    "desktop hero",
+    "tablet hero",
+    "section banner",
+    "gallery image"
+  ],
+  "focalPoint": {
+    "x": 50,
+    "y": 55
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "center",
+  "textSafeArea": "top-left"
+}

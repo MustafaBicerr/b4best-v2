@@ -1,0 +1,47 @@
+{
+  "asset": "milano-hero-01.jpg",
+  "role": "hero-01",
+  "title": "Milano Seaside Terrace with Bouclé Collection",
+  "collection": "Milano",
+  "collectionSlug": "milano",
+  "sourceFile": "milano/1-gigapixel-high fidelity v2-2x.jpg",
+  "orientation": "landscape",
+  "containsPeople": false,
+  "containsSofa": true,
+  "containsChair": true,
+  "containsCoffeeTable": true,
+  "containsAccessories": true,
+  "sceneType": "exterior-terrace-collection",
+  "brightness": "bright",
+  "dominantColor": "ivory boucle",
+  "homepageScore": 98,
+  "luxuryScore": 98,
+  "recommendedUsage": [
+    "homepage-hero",
+    "campaign-cover",
+    "large-format-banner",
+    "gallery"
+  ],
+  "altText": "Milano outdoor terrace under stone arches with an ivory curved bouclé sofa and two black bouclé armchairs facing a calm blue sea horizon.",
+  "seoTitle": "Milano Bouclé Sofa Terrace Collection | Be4Best",
+  "seoDescription": "Be4Best Milano ivory bouclé sofa and black armchairs styled on a Mediterranean sea-view terrace, the brand's signature hero image.",
+  "aspectRatio": "5:3",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": true,
+  "suitableAs": [
+    "desktop hero",
+    "tablet hero",
+    "mobile hero",
+    "section banner",
+    "gallery image"
+  ],
+  "focalPoint": {
+    "x": 50,
+    "y": 55
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "center",
+  "textSafeArea": "top-left"
+}

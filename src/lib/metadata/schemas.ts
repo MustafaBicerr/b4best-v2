@@ -1,4 +1,4 @@
-import { SITE_URL } from '@/config/site';
+import { SITE_URL, PHONES } from '@/config/site';
 
 // ─── Organization Schema ──────────────────────────────────────────────────────
 
@@ -10,19 +10,19 @@ export function organizationSchema() {
     url: SITE_URL,
     logo: `${SITE_URL}/icons/logo.svg`,
     sameAs: [
-      'https://instagram.com/be4bestfurniture',
+      'https://www.instagram.com/b4bmobilya/',
     ],
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Kayseri',
       addressCountry: 'TR',
     },
-    contactPoint: {
+    contactPoint: PHONES.map((p) => ({
       '@type': 'ContactPoint',
-      telephone: '+90-532-123-45-67',
+      telephone: p.number,
       contactType: 'customer service',
       availableLanguage: ['Turkish', 'English'],
-    },
+    })),
   };
 }
 
@@ -37,6 +37,8 @@ export function furnitureStoreSchema(locale: string) {
       ? 'Dünyanın en prestijli lokasyonlarından ilham alan lüks mobilya koleksiyonları.'
       : 'Luxury furniture collections inspired by the world\'s most prestigious locations.',
     url: SITE_URL,
+    telephone: PHONES[0].number,
+    sameAs: ['https://www.instagram.com/b4bmobilya/'],
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Kayseri',
@@ -126,7 +128,7 @@ export function contactPageSchema(locale: string) {
     mainEntity: {
       '@type': 'Organization',
       name: 'Be4Best Furniture',
-      telephone: '+90-532-123-45-67',
+      telephone: PHONES.map((p) => p.number),
       email: 'info@be4best.com',
     },
   };

@@ -135,7 +135,6 @@ export function CollectionsGrid({ collections, locale }: CollectionsGridProps) {
                           {collection.name}
                         </h3>
                         <p className="font-body text-sm text-muted mt-1 line-clamp-2">
-                          {/* @ts-expect-error dynamic key */}
                           {tc(`${collection.slug}.theme`)}
                         </p>
                       </div>

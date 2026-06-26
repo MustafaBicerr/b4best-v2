@@ -1,0 +1,43 @@
+{
+  "asset": "dubai-gallery-03.jpeg",
+  "role": "gallery-03",
+  "title": "Dubai Dusk Living Room with Grey Sofa and Chaise",
+  "collection": "Dubai",
+  "collectionSlug": "dubai",
+  "sourceFile": "dubai/5-gigapixel-high fidelity v2-4x.jpeg",
+  "orientation": "landscape",
+  "containsPeople": false,
+  "containsSofa": true,
+  "containsChair": true,
+  "containsCoffeeTable": true,
+  "containsAccessories": false,
+  "sceneType": "interior-wide",
+  "brightness": "bright",
+  "dominantColor": "soft grey",
+  "homepageScore": 85,
+  "luxuryScore": 89,
+  "recommendedUsage": [
+    "gallery",
+    "product-context"
+  ],
+  "altText": "Dubai living room at dusk featuring a grey three-seater sofa, a cream armchair and a chaise around a round marble coffee table with city lights beyond.",
+  "seoTitle": "Dubai Grey Sofa Living Set | Be4Best",
+  "seoDescription": "Be4Best Dubai grey sofa, armchair and chaise arranged around a marble table at dusk.",
+  "aspectRatio": "7:4",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": false,
+  "suitableAs": [
+    "desktop hero",
+    "section banner",
+    "gallery image"
+  ],
+  "focalPoint": {
+    "x": 50,
+    "y": 55
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "center",
+  "textSafeArea": "bottom-left"
+}

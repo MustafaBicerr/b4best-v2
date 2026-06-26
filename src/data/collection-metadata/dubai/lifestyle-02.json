@@ -1,0 +1,43 @@
+{
+  "asset": "dubai-lifestyle-02.jpeg",
+  "role": "lifestyle-02",
+  "title": "Dubai Daytime Lounging with Skyline View",
+  "collection": "Dubai",
+  "collectionSlug": "dubai",
+  "sourceFile": "dubai/2-gigapixel-high fidelity v2-4x.jpeg",
+  "orientation": "landscape",
+  "containsPeople": true,
+  "containsSofa": true,
+  "containsChair": false,
+  "containsCoffeeTable": true,
+  "containsAccessories": true,
+  "sceneType": "lifestyle",
+  "brightness": "bright",
+  "dominantColor": "soft grey",
+  "homepageScore": 78,
+  "luxuryScore": 85,
+  "recommendedUsage": [
+    "lifestyle",
+    "editorial",
+    "social"
+  ],
+  "altText": "Woman reclining and reading on a light grey Be4Best Dubai sofa in a bright daytime apartment with a city skyline view.",
+  "seoTitle": "Dubai Daytime Lifestyle Scene | Be4Best",
+  "seoDescription": "Be4Best Dubai grey sofa shown in a bright daytime lifestyle setting with a skyline backdrop.",
+  "aspectRatio": "3:2",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": true,
+  "suitableAs": [
+    "section banner",
+    "gallery image"
+  ],
+  "focalPoint": {
+    "x": 55,
+    "y": 52
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "center",
+  "textSafeArea": "top-left"
+}

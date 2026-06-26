@@ -1,0 +1,45 @@
+{
+  "asset": "paris-hero-03.jpeg",
+  "role": "hero-03",
+  "title": "Paris Airy Apartment with Twin Armchairs",
+  "collection": "Paris",
+  "collectionSlug": "paris",
+  "sourceFile": "paris/5-gigapixel-high fidelity v2-2x.jpeg",
+  "orientation": "landscape",
+  "containsPeople": false,
+  "containsSofa": true,
+  "containsChair": true,
+  "containsCoffeeTable": true,
+  "containsAccessories": true,
+  "sceneType": "interior-wide-collection",
+  "brightness": "bright",
+  "dominantColor": "soft beige",
+  "homepageScore": 91,
+  "luxuryScore": 92,
+  "recommendedUsage": [
+    "homepage-hero",
+    "banner",
+    "gallery"
+  ],
+  "altText": "Light-filled Paris apartment with two beige armchairs and a camel sofa around a fluted coffee table, the Eiffel Tower visible across the rooftops.",
+  "seoTitle": "Paris Airy Apartment Set | Be4Best",
+  "seoDescription": "Be4Best Paris armchairs and sofa in a bright classic apartment overlooking the Eiffel Tower.",
+  "aspectRatio": "3:2",
+  "desktopSuitable": true,
+  "tabletSuitable": true,
+  "mobileSuitable": false,
+  "suitableAs": [
+    "desktop hero",
+    "tablet hero",
+    "section banner",
+    "gallery image"
+  ],
+  "focalPoint": {
+    "x": 50,
+    "y": 52
+  },
+  "safeCropDesktop": "center",
+  "safeCropTablet": "center",
+  "safeCropMobile": "center",
+  "textSafeArea": "top-left"
+}

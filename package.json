@@ -8,11 +8,12 @@
     "start": "next start",
     "lint": "next lint",
     "type-check": "tsc --noEmit",
+    "sync-metadata": "node --experimental-vm-modules scripts/sync-metadata.js",
     "build:cf": "npx @cloudflare/next-on-pages",
     "preview": "wrangler pages dev .vercel/output/static",
     "deploy": "wrangler pages deploy .vercel/output/static",
-    "db:migrate": "wrangler d1 execute b4best-assets --file=../Be4Best-web/b4b/database/schema.sql",
-    "db:seed": "wrangler d1 execute b4best-assets --file=../Be4Best-web/b4b/database/seed.sql"
+    "db:migrate": "wrangler d1 execute be4best-db --file=../Be4Best-web/b4b/database/schema.sql",
+    "db:seed": "wrangler d1 execute be4best-db --file=../Be4Best-web/b4b/database/seed.sql"
   },
   "dependencies": {
     "@cloudflare/next-on-pages": "^1.13.0",

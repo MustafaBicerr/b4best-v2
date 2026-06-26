@@ -1,0 +1,47 @@
+{
+  "collection": "Havai",
+  "slug": "havai",
+  "theme": "Branded signature luxury",
+  "style": "Cream chenille with leather straps and brass-tan piping, warm wood interiors",
+  "dominantColors": [
+    "cream chenille",
+    "tan leather",
+    "walnut wood",
+    "soft gold"
+  ],
+  "overallLuxuryScore": 95,
+  "assetCounts": {
+    "master": 5,
+    "homepage": 3,
+    "gallery": 0,
+    "detail": 2,
+    "lifestyle": 0
+  },
+  "recommendedHomepageImages": [
+    "homepage/havai-hero-01.png",
+    "homepage/havai-hero-02.png",
+    "homepage/havai-hero-03.png"
+  ],
+  "recommendedGalleryOrder": [
+    "detail-01",
+    "detail-02"
+  ],
+  "detailImages": [
+    "detail-01",
+    "detail-02"
+  ],
+  "lifestyleImages": [],
+  "duplicates": [],
+  "recommendedMarketingUsage": [
+    "flagship product launch",
+    "signature collection hero",
+    "e-commerce product pages",
+    "premium catalogue"
+  ],
+  "recommendedHeroes": {
+    "desktop": "hero-01",
+    "tablet": "hero-01",
+    "mobile": "hero-03"
+  },
+  "responsiveHeroNote": "hero-03 centers a single sofa and crops cleanly to portrait; hero-01/02 are symmetric and lose side pieces on mobile."
+}
