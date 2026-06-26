@@ -1,0 +1,80 @@
+{
+  "contact": {
+    "meta": {
+      "title": "Contact — Be4Best Furniture",
+      "description": "Get in touch with Be4Best Furniture. Visit our showroom in Kayseri or fill out the online contact form."
+    },
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Get In\nTouch\nWith Us",
+      "subtitle": "We're here for your questions, special requests or collaboration proposals."
+    },
+    "info": {
+      "title": "Contact Information",
+      "address": {
+        "label": "Address",
+        "value": "Kayseri, Turkey"
+      },
+      "phone": {
+        "label": "Phone",
+        "value": "+90 532 123 45 67"
+      },
+      "email": {
+        "label": "Email",
+        "value": "info@be4best.com"
+      },
+      "hours": {
+        "label": "Working Hours",
+        "value": "Mon–Fri: 09:00–18:00"
+      },
+      "whatsapp": "Send a WhatsApp Message"
+    },
+    "form": {
+      "title": "Send a Message",
+      "fields": {
+        "name": {
+          "label": "Full Name",
+          "placeholder": "Your full name"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "example@email.com"
+        },
+        "phone": {
+          "label": "Phone (Optional)",
+          "placeholder": "+1 xxx xxx xxxx"
+        },
+        "company": {
+          "label": "Company (Optional)",
+          "placeholder": "Your company name"
+        },
+        "subject": {
+          "label": "Subject",
+          "placeholder": "Subject of your message"
+        },
+        "message": {
+          "label": "Message",
+          "placeholder": "Write your message here..."
+        }
+      },
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": {
+        "title": "Message Sent",
+        "description": "We will get back to you as soon as possible."
+      },
+      "error": {
+        "title": "An Error Occurred",
+        "description": "Your message could not be sent. Please try again."
+      },
+      "validation": {
+        "nameRequired": "Full name is required.",
+        "emailRequired": "Email address is required.",
+        "emailInvalid": "Please enter a valid email address.",
+        "subjectRequired": "Subject is required.",
+        "messageRequired": "Message is required.",
+        "messageMinLength": "Message must be at least 10 characters."
+      }
+    }
+  }
+}

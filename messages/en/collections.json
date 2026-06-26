@@ -1,0 +1,62 @@
+{
+  "collections": {
+    "meta": {
+      "title": "Collections — Be4Best Furniture",
+      "description": "Discover 7 unique furniture collections inspired by world-famous cities from Dubai to Milano, Havai to Paris."
+    },
+    "pageTitle": "Our Collections",
+    "pageSubtitle": "Each collection inspired by the world's most prestigious locations offers an unparalleled combination of craftsmanship and luxury.",
+    "filterAll": "All",
+    "viewGallery": "View Gallery",
+    "pieces": "Pieces",
+    "exploreMore": "Explore More",
+    "backToCollections": "Back to Collections",
+    "gallery": "Gallery",
+    "details": "Details",
+    "lifestyle": "Lifestyle",
+    "lightbox": {
+      "enlarge": "Enlarge",
+      "prev": "Previous image",
+      "next": "Next image",
+      "close": "Close",
+      "counter": "{current} / {total}"
+    },
+    "items": {
+      "dubai": {
+        "name": "Dubai",
+        "theme": "Burj Khalifa sky penthouse luxury",
+        "description": "The Dubai collection brings the world's most prestigious furniture aesthetic to your home, with the iconic Burj Khalifa skyline as its backdrop. Each piece designed with symmetrical compositions, warm beige tones and premium upholstery materials becomes a work of art."
+      },
+      "milano": {
+        "name": "Milano",
+        "theme": "Mediterranean villa luxury",
+        "description": "The Milano collection draws inspiration from Italian villa aesthetics with sea views. With its arched architecture, soft boucle fabrics and editorial Mediterranean atmosphere, each piece carries the essence of the Italian design tradition."
+      },
+      "havai": {
+        "name": "Havai",
+        "theme": "Branded flagship collection",
+        "description": "Be4Best's signature collection, Havai, is presented with studio-quality product photography in a warm wood-panelled lounge. This collection, where the brand logo is visible, is ideal for product launches."
+      },
+      "toronto": {
+        "name": "Toronto",
+        "theme": "Warm organic lounge aesthetic",
+        "description": "The Toronto collection stands out with its symmetrical full-collection compositions and distinctive two-tone swivel chairs. With its warm organic color palette and consistent quality, it adds natural elegance to every space."
+      },
+      "lyon": {
+        "name": "Lyon",
+        "theme": "Architectural interior serpentine sectional",
+        "description": "The Lyon collection's serpentine sectional sofa offers stunning photography in architectural interiors. Bring the double-height penthouse atmosphere with chandelier and fireplace to your home."
+      },
+      "paris": {
+        "name": "Paris",
+        "theme": "Romantic Eiffel Tower aesthetic",
+        "description": "The Paris collection reflects its classically elegant style against the iconic Eiffel Tower backdrop. With its wood-panelled salon atmosphere and sophisticated details, each piece is the finest representative of the French design tradition."
+      },
+      "lasvegas": {
+        "name": "Las Vegas",
+        "theme": "Desert modern living space",
+        "description": "The Las Vegas collection stands out with its serene desert modern aesthetic and excellent lifestyle frames. With its minimal color palette and desert landscape, each piece offers a peaceful luxury experience."
+      }
+    }
+  }
+}

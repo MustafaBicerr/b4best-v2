@@ -1,0 +1,56 @@
+{
+  "about": {
+    "meta": {
+      "title": "Hakkımızda — Be4Best Furniture",
+      "description": "Be4Best Furniture'ın hikayesi, değerleri ve vizyonu. Kayseri'den dünyaya lüks mobilya ihraç eden 20 yılı aşkın deneyimli marka."
+    },
+    "hero": {
+      "eyebrow": "Hakkımızda",
+      "title": "Lüksü Yeniden\nTanımlayan\nBir Marka",
+      "subtitle": "Her mobilya parçasını bir sanat eseri gibi tasarlayan ve üreten Be4Best'in hikayesi."
+    },
+    "story": {
+      "eyebrow": "Hikayemiz",
+      "title": "Kayseri'den\nDünyaya",
+      "body1": "Be4Best Furniture, Türkiye'nin mobilya başkenti Kayseri'de kurulmuş, premium mobilya tasarımı ve üretiminde uzmanlaşmış bir markadır. 20 yılı aşkın sektör deneyimimizle, lüks ve estetiği fonksiyonellikle buluşturuyoruz.",
+      "body2": "Her koleksiyonumuz, dünyaca tanınan şehirlerden ve yaşam kültürlerinden ilham alarak tasarlanmaktadır. Dubai'nin görkeminden Milano'nun zarafetine, Havai'nin doğallığından Paris'in romantizmine kadar her koleksiyon, benzersiz bir dünya deneyimini evinize taşır."
+    },
+    "values": {
+      "eyebrow": "Değerlerimiz",
+      "title": "Üzerine İnşa Ettiğimiz\nTemel Değerler",
+      "items": {
+        "craftsmanship": {
+          "title": "Ustalık",
+          "description": "Her mobilya parçası, deneyimli ustaların elleriyle titizlikle üretilir. Mükemmellik, her detayda görünür."
+        },
+        "luxury": {
+          "title": "Lüks",
+          "description": "Premium malzemeler, özenli seçimler ve kusursuz işçilik ile gerçek lüksü tanımlıyoruz."
+        },
+        "innovation": {
+          "title": "Yenilik",
+          "description": "Geleneksel ustalığı modern tasarım anlayışıyla birleştirerek sektörde öncü olmayı sürdürüyoruz."
+        },
+        "sustainability": {
+          "title": "Sürdürülebilirlik",
+          "description": "Sorumlu üretim pratikleri ve uzun ömürlü ürünlerle çevreye olan sorumluluğumuzu yerine getiriyoruz."
+        }
+      }
+    },
+    "ceo": {
+      "eyebrow": "Liderlik",
+      "quote": "Her mobilya parçası, bir ev sahibinin hayalinin somut ifadesidir. Be4Best olarak bu hayali gerçeğe dönüştürmek için çalışıyoruz.",
+      "name": "Be4Best Yönetimi",
+      "title": "Kurucu & CEO"
+    },
+    "stats": {
+      "eyebrow": "Rakamlarla Be4Best",
+      "items": {
+        "countries": { "value": "30+", "label": "İhracat Yapılan Ülke" },
+        "collections": { "value": "7", "label": "Özgün Koleksiyon" },
+        "experience": { "value": "20+", "label": "Yıllık Deneyim" },
+        "satisfaction": { "value": "%98", "label": "Müşteri Memnuniyeti" }
+      }
+    }
+  }
+}

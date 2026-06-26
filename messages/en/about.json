@@ -1,0 +1,56 @@
+{
+  "about": {
+    "meta": {
+      "title": "About Us — Be4Best Furniture",
+      "description": "The story, values and vision of Be4Best Furniture. A brand with 20+ years of experience exporting luxury furniture from Kayseri to the world."
+    },
+    "hero": {
+      "eyebrow": "About Us",
+      "title": "A Brand That\nRedefines\nLuxury",
+      "subtitle": "The story of Be4Best, which designs and manufactures each piece of furniture like a work of art."
+    },
+    "story": {
+      "eyebrow": "Our Story",
+      "title": "From Kayseri\nTo The World",
+      "body1": "Be4Best Furniture is a brand established in Kayseri, Turkey's furniture capital, specializing in premium furniture design and manufacturing. With over 20 years of industry experience, we bring luxury and aesthetics together with functionality.",
+      "body2": "Each of our collections is designed with inspiration from world-renowned cities and living cultures. From the grandeur of Dubai to the elegance of Milano, from the naturalness of Havai to the romance of Paris, each collection brings a unique world experience to your home."
+    },
+    "values": {
+      "eyebrow": "Our Values",
+      "title": "The Core Values\nWe Build Upon",
+      "items": {
+        "craftsmanship": {
+          "title": "Craftsmanship",
+          "description": "Every piece of furniture is meticulously crafted by experienced artisans. Excellence is visible in every detail."
+        },
+        "luxury": {
+          "title": "Luxury",
+          "description": "We define true luxury with premium materials, careful selections and flawless workmanship."
+        },
+        "innovation": {
+          "title": "Innovation",
+          "description": "We continue to lead the industry by combining traditional craftsmanship with a modern design approach."
+        },
+        "sustainability": {
+          "title": "Sustainability",
+          "description": "We fulfill our responsibility to the environment with responsible manufacturing practices and long-lasting products."
+        }
+      }
+    },
+    "ceo": {
+      "eyebrow": "Leadership",
+      "quote": "Every piece of furniture is the tangible expression of a homeowner's dream. At Be4Best, we work to turn this dream into reality.",
+      "name": "Be4Best Management",
+      "title": "Founder & CEO"
+    },
+    "stats": {
+      "eyebrow": "Be4Best by the Numbers",
+      "items": {
+        "countries": { "value": "30+", "label": "Export Countries" },
+        "collections": { "value": "7", "label": "Unique Collections" },
+        "experience": { "value": "20+", "label": "Years of Experience" },
+        "satisfaction": { "value": "98%", "label": "Customer Satisfaction" }
+      }
+    }
+  }
+}

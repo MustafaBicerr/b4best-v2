@@ -1,0 +1,80 @@
+{
+  "contact": {
+    "meta": {
+      "title": "İletişim — Be4Best Furniture",
+      "description": "Be4Best Furniture ile iletişime geçin. Kayseri'deki showroomumuzu ziyaret edin veya online iletişim formunu doldurun."
+    },
+    "hero": {
+      "eyebrow": "İletişim",
+      "title": "Bizimle\nİletişime\nGeçin",
+      "subtitle": "Sorularınız, özel talepleriniz veya işbirliği teklifleriniz için buradayız."
+    },
+    "info": {
+      "title": "İletişim Bilgileri",
+      "address": {
+        "label": "Adres",
+        "value": "Kayseri, Türkiye"
+      },
+      "phone": {
+        "label": "Telefon",
+        "value": "+90 532 123 45 67"
+      },
+      "email": {
+        "label": "E-posta",
+        "value": "info@be4best.com"
+      },
+      "hours": {
+        "label": "Çalışma Saatleri",
+        "value": "Pzt–Cum: 09:00–18:00"
+      },
+      "whatsapp": "WhatsApp ile Mesaj Gönder"
+    },
+    "form": {
+      "title": "Mesaj Gönderin",
+      "fields": {
+        "name": {
+          "label": "Ad Soyad",
+          "placeholder": "Adınız ve soyadınız"
+        },
+        "email": {
+          "label": "E-posta",
+          "placeholder": "ornek@email.com"
+        },
+        "phone": {
+          "label": "Telefon (İsteğe bağlı)",
+          "placeholder": "+90 5xx xxx xx xx"
+        },
+        "company": {
+          "label": "Şirket (İsteğe bağlı)",
+          "placeholder": "Şirket adınız"
+        },
+        "subject": {
+          "label": "Konu",
+          "placeholder": "Mesajınızın konusu"
+        },
+        "message": {
+          "label": "Mesaj",
+          "placeholder": "Mesajınızı buraya yazın..."
+        }
+      },
+      "submit": "Mesaj Gönder",
+      "sending": "Gönderiliyor...",
+      "success": {
+        "title": "Mesajınız İletildi",
+        "description": "En kısa sürede size geri dönüş yapacağız."
+      },
+      "error": {
+        "title": "Bir Hata Oluştu",
+        "description": "Mesajınız gönderilemedi. Lütfen tekrar deneyin."
+      },
+      "validation": {
+        "nameRequired": "Ad soyad zorunludur.",
+        "emailRequired": "E-posta adresi zorunludur.",
+        "emailInvalid": "Geçerli bir e-posta adresi girin.",
+        "subjectRequired": "Konu zorunludur.",
+        "messageRequired": "Mesaj zorunludur.",
+        "messageMinLength": "Mesaj en az 10 karakter olmalıdır."
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "home": "Home",
+    "collections": "Collections",
+    "about": "About",
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "footer": {
+    "tagline": "The New Address of Luxury",
+    "collections": "Collections",
+    "company": "Company",
+    "contact": "Contact",
+    "rights": "All rights reserved.",
+    "address": "Kayseri, Turkey",
+    "newsletter": {
+      "title": "Stay Updated on New Collections",
+      "placeholder": "Your email address",
+      "button": "Subscribe",
+      "success": "You have successfully subscribed."
+    }
+  },
+  "buttons": {
+    "viewCollection": "View Collection",
+    "viewAll": "View All",
+    "learnMore": "Learn More",
+    "contactUs": "Contact Us",
+    "sendMessage": "Send Message",
+    "loading": "Loading...",
+    "back": "Back",
+    "close": "Close"
+  },
+  "accessibility": {
+    "skipToContent": "Skip to main content",
+    "languageToggle": "Toggle language",
+    "currentLanguage": "English",
+    "externalLink": "Opens in new tab",
+    "scrollToTop": "Scroll to top"
+  },
+  "errors": {
+    "generic": "An error occurred. Please try again.",
+    "notFound": "Page not found.",
+    "serverError": "Server error. Please try again later."
+  },
+  "floating": {
+    "callUs": "Call Us",
+    "whatsapp": "Contact via WhatsApp"
+  }
+}

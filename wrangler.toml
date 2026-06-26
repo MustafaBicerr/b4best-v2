@@ -1,0 +1,9 @@
+name = "b4best-v2"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = ".vercel/output/static"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "b4best-assets"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"

@@ -1,0 +1,46 @@
+{
+  "home": {
+    "meta": {
+      "title": "Be4Best Furniture — The New Address of Luxury",
+      "description": "Furniture collections inspired by the world's most prestigious locations, representing the pinnacle of craftsmanship. Dubai, Milano, Havai and more."
+    },
+    "hero": {
+      "eyebrow": "New Collection",
+      "title": "Transform Your\nSpace Into a\nMasterpiece",
+      "subtitle": "Add unparalleled luxury to your living spaces with furniture collections designed with inspiration from the world's most prestigious locations.",
+      "cta": "Explore Collections",
+      "scroll": "Scroll Down"
+    },
+    "collections": {
+      "eyebrow": "Collections",
+      "title": "A Masterpiece\nFor Every Space",
+      "subtitle": "7 unique collections, each meticulously designed with inspiration from a world-famous city.",
+      "cta": "All Collections"
+    },
+    "featured": {
+      "eyebrow": "Featured",
+      "label": "Most Preferred",
+      "cta": "Explore Collection"
+    },
+    "about": {
+      "eyebrow": "About Us",
+      "title": "Redefining\nLuxury",
+      "body": "At Be4Best Furniture, we design and manufacture each furniture piece like a work of art. With our export network spanning from Kayseri to the world, we reflect our 20+ years of experience and craftsmanship into every product.",
+      "cta": "Meet Us",
+      "stats": {
+        "countries": "Countries",
+        "countriesValue": "30+",
+        "collections": "Collections",
+        "collectionsValue": "7",
+        "experience": "Years of Experience",
+        "experienceValue": "20+"
+      }
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "title": "Let's Design\nYour Dream\nSpace Together",
+      "subtitle": "Our expert team is ready to offer you tailored solutions.",
+      "cta": "Get In Touch"
+    }
+  }
+}

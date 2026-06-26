@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "collections": "Koleksiyonlar",
+    "about": "Hakkımızda",
+    "contact": "İletişim",
+    "openMenu": "Menüyü aç",
+    "closeMenu": "Menüyü kapat"
+  },
+  "footer": {
+    "tagline": "Lüksün Yeni Adresi",
+    "collections": "Koleksiyonlar",
+    "company": "Şirket",
+    "contact": "İletişim",
+    "rights": "Tüm hakları saklıdır.",
+    "address": "Kayseri, Türkiye",
+    "newsletter": {
+      "title": "Yeni Koleksiyonlardan Haberdar Olun",
+      "placeholder": "E-posta adresiniz",
+      "button": "Abone Ol",
+      "success": "Başarıyla abone oldunuz."
+    }
+  },
+  "buttons": {
+    "viewCollection": "Koleksiyonu İncele",
+    "viewAll": "Tümünü Gör",
+    "learnMore": "Daha Fazla",
+    "contactUs": "İletişime Geç",
+    "sendMessage": "Mesaj Gönder",
+    "loading": "Yükleniyor...",
+    "back": "Geri",
+    "close": "Kapat"
+  },
+  "accessibility": {
+    "skipToContent": "Ana içeriğe geç",
+    "languageToggle": "Dil değiştir",
+    "currentLanguage": "Türkçe",
+    "externalLink": "Yeni sekmede açılır",
+    "scrollToTop": "Sayfanın başına git"
+  },
+  "errors": {
+    "generic": "Bir hata oluştu. Lütfen tekrar deneyin.",
+    "notFound": "Sayfa bulunamadı.",
+    "serverError": "Sunucu hatası. Lütfen daha sonra tekrar deneyin."
+  },
+  "floating": {
+    "callUs": "Bizi Arayın",
+    "whatsapp": "WhatsApp ile İletişim"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "collections": {
+    "meta": {
+      "title": "Koleksiyonlar — Be4Best Furniture",
+      "description": "Dubai'den Milano'ya, Havai'den Paris'e kadar dünyaca ünlü şehirlerden ilham alan 7 özgün mobilya koleksiyonunu keşfedin."
+    },
+    "pageTitle": "Koleksiyonlarımız",
+    "pageSubtitle": "Dünyanın en prestijli lokasyonlarından ilham alınan her koleksiyon, ustalığın ve lüksün eşsiz bir birleşimini sunar.",
+    "filterAll": "Tümü",
+    "viewGallery": "Galeriyi Gör",
+    "pieces": "Parça",
+    "exploreMore": "Daha Fazla Keşfet",
+    "backToCollections": "Koleksiyonlara Dön",
+    "gallery": "Galeri",
+    "details": "Detaylar",
+    "lifestyle": "Yaşam Alanı",
+    "lightbox": {
+      "enlarge": "Büyüt",
+      "prev": "Önceki görsel",
+      "next": "Sonraki görsel",
+      "close": "Kapat",
+      "counter": "{current} / {total}"
+    },
+    "items": {
+      "dubai": {
+        "name": "Dubai",
+        "theme": "Burj Khalifa manzaralı gökyüzü katı lüksü",
+        "description": "Dubai koleksiyonu, ikonik Burj Khalifa silüetini arka planına alarak dünyanın en prestijli mobilya anlayışını evinize taşır. Simetrik kompozisyonlar, ılık bej tonları ve premium döşeme malzemeleriyle tasarlanan her parça, bir sanat eserine dönüşür."
+      },
+      "milano": {
+        "name": "Milano",
+        "theme": "Akdeniz villa lüksü",
+        "description": "Milano koleksiyonu, deniz manzaralı İtalyan villa estetiğinden ilham alır. Kemerli mimarisi, yumuşak boho kumaşlar ve editoryal Akdeniz atmosferiyle her parça, İtalyan tasarım geleneğinin özünü taşır."
+      },
+      "havai": {
+        "name": "Havai",
+        "theme": "Markalı flagship koleksiyon",
+        "description": "Be4Best'in imza koleksiyonu olan Havai, sıcak ahşap panel salonunda stüdyo düzeyinde ürün fotoğraflarıyla sunulmaktadır. Marka logosunun görünür olduğu bu koleksiyon, ürün lansmanları için idealdir."
+      },
+      "toronto": {
+        "name": "Toronto",
+        "theme": "Sıcak organik salon estetiği",
+        "description": "Toronto koleksiyonu, simetrik tam koleksiyon kompozisyonları ve benzersiz iki tonlu döner koltukları ile öne çıkar. Sıcak organik renk paleti ve tutarlı kalitesiyle her mekâna doğal bir zarafet katar."
+      },
+      "lyon": {
+        "name": "Lyon",
+        "theme": "Mimari iç mekân serpilin seksiyonel",
+        "description": "Lyon koleksiyonunun yılan şeklindeki seksiyonel kanepe, mimari iç mekânlarda büyüleyici fotoğraflar sunmaktadır. Avize ve şöminesiyle çift katlı penthouse atmosferini evinize taşıyın."
+      },
+      "paris": {
+        "name": "Paris",
+        "theme": "Romantik Eyfel Kulesi estetiği",
+        "description": "Paris koleksiyonu, ikonik Eyfel Kulesi manzarası eşliğinde klasik zarif stilini yansıtır. Ahşap panelli salon atmosferi ve sofistike detaylarıyla her parça, Fransız tasarım geleneğinin en güzel temsilcisidir."
+      },
+      "lasvegas": {
+        "name": "Las Vegas",
+        "theme": "Çöl modern yaşam alanı",
+        "description": "Las Vegas koleksiyonu, sakin çöl modern estetiği ve mükemmel yaşam alanı kareleriyle öne çıkar. Minimal renk paleti ve çöl manzarasıyla her parça, huzurlu bir lüks anlayışı sunar."
+      }
+    }
+  }
+}

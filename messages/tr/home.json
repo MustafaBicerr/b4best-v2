@@ -1,0 +1,46 @@
+{
+  "home": {
+    "meta": {
+      "title": "Be4Best Furniture — Lüksün Yeni Adresi",
+      "description": "Dünyanın en seçkin lokasyonlarından ilham alan, el işçiliğinin zirvesini temsil eden mobilya koleksiyonları. Dubai, Milano, Havai ve daha fazlası."
+    },
+    "hero": {
+      "eyebrow": "Yeni Koleksiyon",
+      "title": "Mekânınızı\nBir Şahesere\nDönüştürün",
+      "subtitle": "Dünyanın en prestijli lokasyonlarından ilham alınarak tasarlanan mobilya koleksiyonları ile yaşam alanlarınıza eşsiz bir lüks katın.",
+      "cta": "Koleksiyonları Keşfet",
+      "scroll": "Aşağı Kaydır"
+    },
+    "collections": {
+      "eyebrow": "Koleksiyonlar",
+      "title": "Her Mekân\nİçin Bir Şaheser",
+      "subtitle": "7 özgün koleksiyon, her biri dünyaca ünlü bir şehirden ilham alınarak özenle tasarlanmıştır.",
+      "cta": "Tüm Koleksiyonlar"
+    },
+    "featured": {
+      "eyebrow": "Öne Çıkan",
+      "label": "En Çok Tercih Edilen",
+      "cta": "Koleksiyonu Keşfet"
+    },
+    "about": {
+      "eyebrow": "Hakkımızda",
+      "title": "Lüksü Yeniden\nTanımlıyoruz",
+      "body": "Be4Best Furniture olarak, her mobilya parçasını bir sanat eseri gibi tasarlıyor ve üretiyoruz. Kayseri'den dünyaya uzanan ihracat ağımızla, 20 yılı aşkın deneyimimizi ve ustalığımızı her ürüne yansıtıyoruz.",
+      "cta": "Bizi Tanıyın",
+      "stats": {
+        "countries": "Ülke",
+        "countriesValue": "30+",
+        "collections": "Koleksiyon",
+        "collectionsValue": "7",
+        "experience": "Yıllık Deneyim",
+        "experienceValue": "20+"
+      }
+    },
+    "contact": {
+      "eyebrow": "İletişim",
+      "title": "Hayalinizdeki\nMekânı Birlikte\nTasarlayalım",
+      "subtitle": "Uzman ekibimiz, size özel çözümler sunmak için hazır.",
+      "cta": "Bize Ulaşın"
+    }
+  }
+}
