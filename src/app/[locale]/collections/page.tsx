@@ -11,6 +11,8 @@ import { Eyebrow, Display, Body } from '@/components/ui/Typography';
 import { breadcrumbSchema } from '@/lib/metadata/schemas';
 import { SITE_URL } from '@/config/site';
 import { cn } from '@/lib/utils/cn';
+import { MediaImage } from '@/components/ui/MediaImage';
+import { buildPageMetadata } from '@/lib/metadata/page-metadata';
 
 export const revalidate = 3600;
 
@@ -22,22 +24,13 @@ export async function generateMetadata({ params }: CollectionsPageProps): Promis
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'collections.meta' });
 
-  return {
+  return buildPageMetadata({
+    locale,
+    path: '/collections',
     title: t('title'),
     description: t('description'),
-    alternates: {
-      canonical: `${SITE_URL}/${locale}/collections`,
-      languages: {
-        tr: `${SITE_URL}/tr/collections`,
-        en: `${SITE_URL}/en/collections`,
-      },
-    },
-    openGraph: {
-      title: t('title'),
-      description: t('description'),
-      url: `${SITE_URL}/${locale}/collections`,
-    },
-  };
+    ogImage: collectionAsset('dubai', 'homepage', 'dubai-hero-01.jpeg'),
+  });
 }
 
 const CARD_IMAGES: Record<string, { src: string; focalX: number; focalY: number }> = {
@@ -104,13 +97,18 @@ export default async function CollectionsPage({ params }: CollectionsPageProps) 
                     {/* Image */}
                     <div className={cn('relative overflow-hidden', isFirst ? 'aspect-hero' : 'aspect-collection-card')}>
                       {image && (
-                        // eslint-disable-next-line @next/next/no-img-element
-                        <img
+                        <MediaImage
                           src={image.src}
                           alt={`${collection.name} — Be4Best Furniture`}
-                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                          style={{ objectPosition: `${image.focalX}% ${image.focalY}%` }}
-                          loading={index < 2 ? 'eager' : 'lazy'}
+                          fill
+                          sizes={isFirst
+                            ? '(max-width: 768px) 100vw, 100vw'
+                            : '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 50vw'}
+                          priority={index < 2}
+                          focalX={image.focalX}
+                          focalY={image.focalY}
+                          className="transition-transform duration-700 group-hover:scale-105"
+                          wrapperClassName="absolute inset-0"
                         />
                       )}
                       <div className="absolute inset-0 bg-dark/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />

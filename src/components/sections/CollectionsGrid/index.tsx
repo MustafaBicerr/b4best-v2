@@ -10,6 +10,7 @@ import { collectionAsset } from '@/lib/assets/urls';
 import { Container } from '@/components/ui/Container';
 import { Eyebrow, Heading } from '@/components/ui/Typography';
 import { cn } from '@/lib/utils/cn';
+import { MediaImage } from '@/components/ui/MediaImage';
 import type { Collection } from '@/types/collection';
 
 /**
@@ -90,13 +91,15 @@ export function CollectionsGrid({ collections, locale }: CollectionsGridProps) {
                       className="absolute inset-0"
                     >
                       {image && (
-                        // eslint-disable-next-line @next/next/no-img-element
-                        <img
+                        <MediaImage
                           src={image.src}
                           alt={`${collection.name} — Be4Best Furniture`}
-                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                          style={{ objectPosition: `${image.focalX}% ${image.focalY}%` }}
-                          loading="lazy"
+                          fill
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                          focalX={image.focalX}
+                          focalY={image.focalY}
+                          className="transition-transform duration-700 group-hover:scale-105"
+                          wrapperClassName="absolute inset-0"
                         />
                       )}
                     </motion.div>

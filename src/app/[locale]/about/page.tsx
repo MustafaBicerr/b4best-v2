@@ -6,7 +6,8 @@ import { Eyebrow, Heading, Body } from '@/components/ui/Typography';
 import { aboutPageSchema, breadcrumbSchema } from '@/lib/metadata/schemas';
 import { SITE_URL } from '@/config/site';
 import { collectionAsset } from '@/lib/assets/urls';
-
+import { MediaImage } from '@/components/ui/MediaImage';
+import { buildPageMetadata } from '@/lib/metadata/page-metadata';
 
 interface AboutPageProps {
   params: Promise<{ locale: string }>;
@@ -16,17 +17,13 @@ export async function generateMetadata({ params }: AboutPageProps): Promise<Meta
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'about.meta' });
 
-  return {
+  return buildPageMetadata({
+    locale,
+    path: '/about',
     title: t('title'),
     description: t('description'),
-    alternates: {
-      canonical: `${SITE_URL}/${locale}/about`,
-      languages: {
-        tr: `${SITE_URL}/tr/about`,
-        en: `${SITE_URL}/en/about`,
-      },
-    },
-  };
+    ogImage: collectionAsset('milano', 'homepage', 'milano-hero-01.jpg'),
+  });
 }
 
 export default async function AboutPage({ params }: AboutPageProps) {
@@ -62,14 +59,15 @@ export default async function AboutPage({ params }: AboutPageProps) {
 
       {/* Hero */}
       <section className="relative min-h-[60vh] flex flex-col justify-end overflow-hidden">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <MediaImage
           src={collectionAsset('milano', 'homepage', 'milano-hero-01.jpg')}
           alt="Be4Best Furniture — Milano Koleksiyonu"
-          className="absolute inset-0 w-full h-full object-cover"
-          style={{ objectPosition: '50% 40%' }}
-          fetchPriority="high"
-          loading="eager"
+          fill
+          sizes="100vw"
+          priority
+          focalX={50}
+          focalY={40}
+          wrapperClassName="absolute inset-0"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-dark/80 via-dark/40 to-dark/10" aria-hidden="true" />
 

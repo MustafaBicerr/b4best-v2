@@ -3,6 +3,16 @@ import { SITE_URL, LOCALES, COLLECTION_ORDER } from '@/config/site';
 
 export const revalidate = 86400;
 
+function hreflangAlternates(path: string) {
+  return {
+    languages: {
+      tr: `${SITE_URL}/tr${path}`,
+      en: `${SITE_URL}/en${path}`,
+      'x-default': `${SITE_URL}/tr${path}`,
+    },
+  };
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date().toISOString();
 
@@ -15,11 +25,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: now,
       changeFrequency: 'weekly',
       priority: 1.0,
-      alternates: {
-        languages: Object.fromEntries(
-          LOCALES.map((l) => [l, `${SITE_URL}/${l}`])
-        ),
-      },
+      alternates: hreflangAlternates(''),
     });
 
     // Collections index
@@ -28,11 +34,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: now,
       changeFrequency: 'weekly',
       priority: 0.9,
-      alternates: {
-        languages: Object.fromEntries(
-          LOCALES.map((l) => [l, `${SITE_URL}/${l}/collections`])
-        ),
-      },
+      alternates: hreflangAlternates('/collections'),
     });
 
     // Individual collections
@@ -42,11 +44,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         lastModified: now,
         changeFrequency: 'monthly',
         priority: 0.85,
-        alternates: {
-          languages: Object.fromEntries(
-            LOCALES.map((l) => [l, `${SITE_URL}/${l}/collections/${slug}`])
-          ),
-        },
+        alternates: hreflangAlternates(`/collections/${slug}`),
       });
     }
 
@@ -56,11 +54,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.7,
-      alternates: {
-        languages: Object.fromEntries(
-          LOCALES.map((l) => [l, `${SITE_URL}/${l}/about`])
-        ),
-      },
+      alternates: hreflangAlternates('/about'),
     });
 
     // Contact
@@ -69,11 +63,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.7,
-      alternates: {
-        languages: Object.fromEntries(
-          LOCALES.map((l) => [l, `${SITE_URL}/${l}/contact`])
-        ),
-      },
+      alternates: hreflangAlternates('/contact'),
     });
   }
 

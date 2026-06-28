@@ -9,11 +9,8 @@ import { heroEntrance, heroTextContainer, heroTextLine, fadeIn } from '@/lib/ani
 import { useReducedMotion } from '@/hooks/useReducedMotion';
 import { collectionAsset } from '@/lib/assets/urls';
 import { cn } from '@/lib/utils/cn';
+import { MediaImage } from '@/components/ui/MediaImage';
 
-/**
- * Hero images selected per device following homepage-ranking.json deviceHeroStrategy.
- * Desktop/tablet use landscape wide shots; mobile uses portrait-friendly compositions.
- */
 const DESKTOP_HEROES = [
   { src: collectionAsset('milano', 'homepage', 'milano-hero-01.jpg'), collection: 'Milano', focalX: 50, focalY: 40 },
   { src: collectionAsset('dubai', 'homepage', 'dubai-hero-01.jpeg'), collection: 'Dubai', focalX: 50, focalY: 52 },
@@ -57,6 +54,10 @@ export function HeroSection({ locale }: HeroSectionProps) {
   }, [heroes.length]);
 
   useEffect(() => {
+    setCurrentIndex(0);
+  }, [isMobile]);
+
+  useEffect(() => {
     if (prefersReducedMotion) return;
     const timer = setInterval(advance, ROTATION_INTERVAL);
     return () => clearInterval(timer);
@@ -69,7 +70,6 @@ export function HeroSection({ locale }: HeroSectionProps) {
       className="relative w-full min-h-screen flex flex-col justify-end overflow-hidden"
       aria-label={`${t('eyebrow')} — Be4Best`}
     >
-      {/* Background images */}
       <AnimatePresence mode="sync">
         {heroes.map((hero, index) =>
           index === currentIndex ? (
@@ -81,27 +81,27 @@ export function HeroSection({ locale }: HeroSectionProps) {
               animate={prefersReducedMotion ? { opacity: 1 } : 'visible'}
               exit={prefersReducedMotion ? { opacity: 0 } : 'exit'}
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <MediaImage
                 src={hero.src}
                 alt={`${hero.collection} koleksiyonu — Be4Best Furniture`}
-                className="absolute inset-0 w-full h-full object-cover"
-                style={{ objectPosition: `${hero.focalX}% ${hero.focalY}%` }}
-                fetchPriority={index === 0 ? 'high' : 'low'}
-                loading={index === 0 ? 'eager' : 'lazy'}
+                fill
+                sizes="100vw"
+                priority={index === 0}
+                focalX={hero.focalX}
+                focalY={hero.focalY}
+                className="object-cover"
+                wrapperClassName="absolute inset-0"
               />
             </motion.div>
           ) : null
         )}
       </AnimatePresence>
 
-      {/* Dark gradient overlay */}
       <div
         className="absolute inset-0 bg-gradient-to-t from-dark/80 via-dark/30 to-dark/10"
         aria-hidden="true"
       />
 
-      {/* Content */}
       <div className="relative z-10 mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12 xl:px-16 pb-16 lg:pb-24">
         <motion.div
           variants={heroTextContainer}
@@ -109,7 +109,6 @@ export function HeroSection({ locale }: HeroSectionProps) {
           animate="visible"
           className="max-w-3xl"
         >
-          {/* Eyebrow */}
           <motion.p
             variants={heroTextLine}
             className="font-accent text-xs font-semibold uppercase tracking-[0.3em] text-gold mb-4 lg:mb-6"
@@ -117,7 +116,6 @@ export function HeroSection({ locale }: HeroSectionProps) {
             {t('eyebrow')}
           </motion.p>
 
-          {/* Title */}
           <h1 className="sr-only">{t('title').replace(/\n/g, ' ')}</h1>
           <div aria-hidden="true">
             {titleLines.map((line, i) => (
@@ -134,7 +132,6 @@ export function HeroSection({ locale }: HeroSectionProps) {
             ))}
           </div>
 
-          {/* Subtitle */}
           <motion.p
             variants={heroTextLine}
             className="mt-6 lg:mt-8 font-body text-on-dark/80 max-w-xl leading-relaxed text-base lg:text-lg"
@@ -142,7 +139,6 @@ export function HeroSection({ locale }: HeroSectionProps) {
             {t('subtitle')}
           </motion.p>
 
-          {/* CTA */}
           <motion.div variants={heroTextLine} className="mt-8 lg:mt-10">
             <Link
               href={`/${locale}/collections`}
@@ -167,7 +163,6 @@ export function HeroSection({ locale }: HeroSectionProps) {
           </motion.div>
         </motion.div>
 
-        {/* Dot indicators */}
         <div
           className="flex items-center gap-2 mt-10"
           role="tablist"
@@ -191,7 +186,6 @@ export function HeroSection({ locale }: HeroSectionProps) {
         </div>
       </div>
 
-      {/* Scroll indicator */}
       <motion.div
         variants={fadeIn}
         initial="hidden"

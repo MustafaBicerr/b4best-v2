@@ -9,8 +9,10 @@ import { collectionAsset } from '@/lib/assets/urls';
 import { loadCollectionGallery } from '@/lib/assets/metadata-loader';
 import { Container } from '@/components/ui/Container';
 import { Eyebrow, Heading, Body } from '@/components/ui/Typography';
+import { MediaImage } from '@/components/ui/MediaImage';
 import { CollectionGallery } from '@/components/sections/CollectionGallery';
 import { collectionSchema, breadcrumbSchema } from '@/lib/metadata/schemas';
+import { buildPageMetadata } from '@/lib/metadata/page-metadata';
 import { SITE_URL } from '@/config/site';
 import { slugToName } from '@/lib/utils/formatters';
 import { cn } from '@/lib/utils/cn';
@@ -32,45 +34,6 @@ export async function generateStaticParams() {
   );
 }
 
-export async function generateMetadata({ params }: CollectionPageProps): Promise<Metadata> {
-  const { locale, slug } = await params;
-  const tc = await getTranslations({ locale, namespace: `collections.items.${slug}` });
-  const tMeta = await getTranslations({ locale, namespace: 'collections.meta' });
-
-  const heroImage = collectionAsset(slug, 'homepage', `${slug}-hero-01.jpeg`);
-
-  return {
-    title: `${slugToName(slug)} — ${tMeta('title').split('—')[1]?.trim() ?? 'Be4Best Furniture'}`,
-    description: tc('description'),
-    alternates: {
-      canonical: `${SITE_URL}/${locale}/collections/${slug}`,
-      languages: {
-        tr: `${SITE_URL}/tr/collections/${slug}`,
-        en: `${SITE_URL}/en/collections/${slug}`,
-      },
-    },
-    openGraph: {
-      title: `${slugToName(slug)} — Be4Best Furniture`,
-      description: tc('description'),
-      url: `${SITE_URL}/${locale}/collections/${slug}`,
-      images: [
-        {
-          url: heroImage,
-          width: 1200,
-          height: 800,
-          alt: `${slugToName(slug)} — Be4Best Furniture`,
-        },
-      ],
-    },
-  };
-}
-
-/**
- * Hero image config per collection — only the primary hero that renders in
- * the full-bleed hero section above the gallery needs special treatment.
- * Extensions and focal points come directly from the metadata JSON via
- * loadCollectionGallery; this map covers just the hero-01 asset.
- */
 const HERO_CONFIG: Record<string, { filename: string; ext: string; focalX: number; focalY: number }> = {
   dubai:    { filename: 'dubai-hero-01',    ext: 'jpeg', focalX: 50, focalY: 52 },
   milano:   { filename: 'milano-hero-01',   ext: 'jpg',  focalX: 50, focalY: 40 },
@@ -80,6 +43,28 @@ const HERO_CONFIG: Record<string, { filename: string; ext: string; focalX: numbe
   paris:    { filename: 'paris-hero-01',    ext: 'jpeg', focalX: 50, focalY: 45 },
   lasvegas: { filename: 'lasvegas-hero-01', ext: 'jpeg', focalX: 50, focalY: 50 },
 };
+
+function collectionHeroUrl(slug: string): string {
+  const hero = HERO_CONFIG[slug] ?? { filename: `${slug}-hero-01`, ext: 'jpeg', focalX: 50, focalY: 50 };
+  return collectionAsset(slug, 'homepage', `${hero.filename}.${hero.ext}`);
+}
+
+export async function generateMetadata({ params }: CollectionPageProps): Promise<Metadata> {
+  const { locale, slug } = await params;
+  const tc = await getTranslations({ locale, namespace: `collections.items.${slug}` });
+  const tMeta = await getTranslations({ locale, namespace: 'collections.meta' });
+
+  const heroImage = collectionHeroUrl(slug);
+  const title = `${slugToName(slug)} — ${tMeta('title').split('—')[1]?.trim() ?? 'Be4Best Furniture'}`;
+
+  return buildPageMetadata({
+    locale,
+    path: `/collections/${slug}`,
+    title,
+    description: tc('description'),
+    ogImage: heroImage,
+  });
+}
 
 export default async function CollectionDetailPage({ params }: CollectionPageProps) {
   const { locale, slug } = await params;
@@ -97,7 +82,7 @@ export default async function CollectionDetailPage({ params }: CollectionPagePro
   if (!collection) notFound();
 
   const hero = HERO_CONFIG[slug] ?? { filename: `${slug}-hero-01`, ext: 'jpeg', focalX: 50, focalY: 50 };
-  const heroUrl = collectionAsset(slug, 'homepage', `${hero.filename}.${hero.ext}`);
+  const heroUrl = collectionHeroUrl(slug);
 
   // All gallery images loaded dynamically from metadata JSONs at build time.
   // Includes gallery, detail, lifestyle and alternate hero shots — everything
@@ -131,14 +116,15 @@ export default async function CollectionDetailPage({ params }: CollectionPagePro
 
       {/* Hero */}
       <section className="relative min-h-[70vh] lg:min-h-[80vh] flex flex-col justify-end overflow-hidden">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <MediaImage
           src={heroUrl}
           alt={`${collection.name} — Be4Best Furniture`}
-          className="absolute inset-0 w-full h-full object-cover"
-          style={{ objectPosition: `${hero.focalX}% ${hero.focalY}%` }}
-          fetchPriority="high"
-          loading="eager"
+          fill
+          sizes="100vw"
+          priority
+          focalX={hero.focalX}
+          focalY={hero.focalY}
+          wrapperClassName="absolute inset-0"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-dark/80 via-dark/30 to-transparent" aria-hidden="true" />
 

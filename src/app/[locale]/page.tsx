@@ -9,7 +9,7 @@ import { ContactCTA } from '@/components/sections/ContactCTA';
 import { getCloudflareEnv } from '@/lib/cloudflare/env';
 import { getCollections, sortCollectionsByOrder } from '@/lib/cloudflare/d1';
 import { organizationSchema, furnitureStoreSchema, websiteSchema } from '@/lib/metadata/schemas';
-import { SITE_URL } from '@/config/site';
+import { buildPageMetadata } from '@/lib/metadata/page-metadata';
 
 export const revalidate = 3600;
 
@@ -21,30 +21,11 @@ export async function generateMetadata({ params }: HomePageProps): Promise<Metad
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'home.meta' });
 
-  return {
+  return buildPageMetadata({
+    locale,
     title: t('title'),
     description: t('description'),
-    alternates: {
-      canonical: `${SITE_URL}/${locale}`,
-      languages: {
-        tr: `${SITE_URL}/tr`,
-        en: `${SITE_URL}/en`,
-      },
-    },
-    openGraph: {
-      title: t('title'),
-      description: t('description'),
-      url: `${SITE_URL}/${locale}`,
-      images: [
-        {
-          url: `${SITE_URL}/og/home.jpg`,
-          width: 1200,
-          height: 630,
-          alt: 'Be4Best Furniture',
-        },
-      ],
-    },
-  };
+  });
 }
 
 export default async function HomePage({ params }: HomePageProps) {

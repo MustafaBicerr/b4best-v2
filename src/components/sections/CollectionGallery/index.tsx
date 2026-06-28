@@ -8,7 +8,11 @@ import { fadeInUp, staggerContainer, viewportConfig } from '@/lib/animations/var
 import { useReducedMotion } from '@/hooks/useReducedMotion';
 import { Eyebrow, Heading } from '@/components/ui/Typography';
 import { Container } from '@/components/ui/Container';
+import { MediaImage } from '@/components/ui/MediaImage';
 import { cn } from '@/lib/utils/cn';
+
+const INITIAL_COUNT = 8;
+const PAGE_SIZE = 8;
 
 interface GalleryImage {
   src: string;
@@ -26,22 +30,19 @@ interface CollectionGalleryProps {
   detailImages?: GalleryImage[];
 }
 
-/**
- * Returns a Tailwind aspect-ratio class derived from the aspect ratio string.
- * Portrait images get taller tiles; squares get a neutral ratio.
- */
 function aspectClass(image: GalleryImage): string {
   const ratio = image.aspectRatio ?? (image.orientation === 'portrait' ? '2:3' : '3:2');
   if (ratio === '2:3' || image.orientation === 'portrait') return 'aspect-[2/3]';
   if (ratio === '1:1' || image.orientation === 'square')   return 'aspect-square';
   if (ratio === '4:3') return 'aspect-[4/3]';
-  return 'aspect-[3/2]'; // default landscape
+  return 'aspect-[3/2]';
 }
 
 export function CollectionGallery({ galleryImages, detailImages = [] }: CollectionGalleryProps) {
   const t = useTranslations('collections');
   const prefersReducedMotion = useReducedMotion();
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+  const [visibleCount, setVisibleCount] = useState(INITIAL_COUNT);
 
   // Merge legacy detailImages for backward compat, de-dupe by src
   const seen = new Set<string>();
@@ -50,6 +51,9 @@ export function CollectionGallery({ galleryImages, detailImages = [] }: Collecti
     seen.add(src);
     return true;
   });
+
+  const visibleImages = allImages.slice(0, visibleCount);
+  const hasMore = visibleCount < allImages.length;
 
   const openLightbox = useCallback((index: number) => setLightboxIndex(index), []);
   const closeLightbox = useCallback(() => setLightboxIndex(null), []);
@@ -98,13 +102,7 @@ export function CollectionGallery({ galleryImages, detailImages = [] }: Collecti
             </p>
           </motion.div>
 
-          {/*
-           * Masonry column layout.
-           * columns-* creates a natural Pinterest/masonry flow.
-           * Each image preserves its native aspect ratio via the aspect-* class
-           * so portrait, landscape, and square shots stack without gaps.
-           * On xl screens 4 columns fit more images without crowding.
-           */}
+          {/* Masonry grid — show only visibleImages, rest load on demand */}
           <motion.div
             variants={prefersReducedMotion ? undefined : staggerContainer}
             initial={prefersReducedMotion ? undefined : 'hidden'}
@@ -112,7 +110,7 @@ export function CollectionGallery({ galleryImages, detailImages = [] }: Collecti
             viewport={viewportConfig}
             className="columns-2 sm:columns-2 lg:columns-3 xl:columns-4 gap-3 space-y-3"
           >
-            {allImages.map((image, index) => (
+            {visibleImages.map((image, index) => (
               <motion.div
                 key={`${image.src}-${index}`}
                 variants={prefersReducedMotion ? undefined : fadeInUp}
@@ -127,18 +125,15 @@ export function CollectionGallery({ galleryImages, detailImages = [] }: Collecti
                 aria-label={`${image.alt} — ${t('lightbox.enlarge')}`}
                 onKeyDown={(e) => e.key === 'Enter' && openLightbox(index)}
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <MediaImage
                   src={image.src}
                   alt={image.alt}
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  style={{
-                    objectPosition:
-                      image.focalX !== undefined && image.focalY !== undefined
-                        ? `${image.focalX}% ${image.focalY}%`
-                        : 'center',
-                  }}
-                  loading="lazy"
+                  fill
+                  sizes="(max-width: 640px) 50vw, (max-width: 1280px) 33vw, 25vw"
+                  focalX={image.focalX}
+                  focalY={image.focalY}
+                  className="transition-transform duration-700 group-hover:scale-105"
+                  wrapperClassName="absolute inset-0"
                 />
                 {/* Hover overlay */}
                 <div
@@ -150,10 +145,30 @@ export function CollectionGallery({ galleryImages, detailImages = [] }: Collecti
               </motion.div>
             ))}
           </motion.div>
+
+          {/* Load More */}
+          {hasMore && (
+            <div className="text-center mt-10">
+              <button
+                onClick={() => setVisibleCount((c) => c + PAGE_SIZE)}
+                className={cn(
+                  'inline-flex items-center gap-3',
+                  'font-accent text-xs font-semibold uppercase tracking-[0.2em] text-dark',
+                  'border border-dark/30 px-8 py-4',
+                  'hover:border-gold hover:text-gold transition-all duration-300'
+                )}
+              >
+                Daha Fazla Yükle
+                <span className="text-dark/40 font-body normal-case tracking-normal text-xs">
+                  ({Math.min(PAGE_SIZE, allImages.length - visibleCount)} / {allImages.length - visibleCount} kaldı)
+                </span>
+              </button>
+            </div>
+          )}
         </Container>
       </section>
 
-      {/* Lightbox */}
+      {/* Lightbox — always uses full allImages array, unaffected by pagination */}
       <AnimatePresence>
         {lightboxIndex !== null && (
           <motion.div
@@ -186,7 +201,7 @@ export function CollectionGallery({ galleryImages, detailImages = [] }: Collecti
               </button>
             )}
 
-            {/* Image */}
+            {/* Lightbox image — served at display size, high quality */}
             <motion.div
               key={lightboxIndex}
               initial={{ opacity: 0, scale: 0.95 }}
@@ -196,11 +211,17 @@ export function CollectionGallery({ galleryImages, detailImages = [] }: Collecti
               className="relative max-w-5xl max-h-[85vh] mx-14 sm:mx-20"
               onClick={(e) => e.stopPropagation()}
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <MediaImage
                 src={allImages[lightboxIndex].src}
                 alt={allImages[lightboxIndex].alt}
-                className="max-w-full max-h-[85vh] object-contain rounded-sm"
+                fill={false}
+                sizes="(max-width: 768px) 100vw, 80vw"
+                width={1200}
+                height={800}
+                focalX={allImages[lightboxIndex].focalX}
+                focalY={allImages[lightboxIndex].focalY}
+                className="max-w-full max-h-[85vh] object-contain rounded-sm !object-contain"
+                style={{ objectFit: 'contain' }}
               />
               <p className="text-center font-body text-on-dark/50 text-sm mt-3">
                 {lightboxIndex + 1} / {allImages.length}

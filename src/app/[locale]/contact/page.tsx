@@ -7,6 +7,8 @@ import { Eyebrow, Heading, Body } from '@/components/ui/Typography';
 import { ContactForm } from '@/components/sections/ContactForm';
 import { contactPageSchema, breadcrumbSchema } from '@/lib/metadata/schemas';
 import { SITE_URL, SITE_CONFIG, PHONES } from '@/config/site';
+import { buildPageMetadata } from '@/lib/metadata/page-metadata';
+import { collectionAsset } from '@/lib/assets/urls';
 
 interface ContactPageProps {
   params: Promise<{ locale: string }>;
@@ -16,17 +18,13 @@ export async function generateMetadata({ params }: ContactPageProps): Promise<Me
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'contact.meta' });
 
-  return {
+  return buildPageMetadata({
+    locale,
+    path: '/contact',
     title: t('title'),
     description: t('description'),
-    alternates: {
-      canonical: `${SITE_URL}/${locale}/contact`,
-      languages: {
-        tr: `${SITE_URL}/tr/contact`,
-        en: `${SITE_URL}/en/contact`,
-      },
-    },
-  };
+    ogImage: collectionAsset('lasvegas', 'homepage', 'lasvegas-hero-01.jpeg'),
+  });
 }
 
 export default async function ContactPage({ params }: ContactPageProps) {

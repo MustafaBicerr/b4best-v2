@@ -10,6 +10,7 @@ import { collectionAsset } from '@/lib/assets/urls';
 import { Container } from '@/components/ui/Container';
 import { Eyebrow, Heading, Body } from '@/components/ui/Typography';
 import { Badge } from '@/components/ui/Badge';
+import { MediaImage } from '@/components/ui/MediaImage';
 import { cn } from '@/lib/utils/cn';
 
 interface FeaturedCollectionProps {
@@ -83,13 +84,14 @@ export function FeaturedCollection({ locale }: FeaturedCollectionProps) {
                 className="col-span-2 relative overflow-hidden"
                 style={{ aspectRatio: '16/9' }}
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <MediaImage
                   src={collectionAsset('dubai', 'homepage', 'dubai-hero-01.jpeg')}
                   alt="Dubai koleksiyonu — Burj Khalifa manzaralı salon"
-                  className="w-full h-full object-cover"
-                  style={{ objectPosition: '50% 52%' }}
-                  loading="lazy"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  focalX={50}
+                  focalY={52}
+                  wrapperClassName="absolute inset-0"
                 />
               </motion.div>
 
@@ -99,13 +101,14 @@ export function FeaturedCollection({ locale }: FeaturedCollectionProps) {
                 className="relative overflow-hidden"
                 style={{ aspectRatio: '4/3' }}
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <MediaImage
                   src={collectionAsset('dubai', 'detail', 'dubai-detail-01.jpeg')}
                   alt="Dubai koleksiyonu koltuk detayı"
-                  className="w-full h-full object-cover"
-                  style={{ objectPosition: '48% 55%' }}
-                  loading="lazy"
+                  fill
+                  sizes="(max-width: 1024px) 50vw, 25vw"
+                  focalX={48}
+                  focalY={55}
+                  wrapperClassName="absolute inset-0"
                 />
               </motion.div>
 
@@ -114,12 +117,12 @@ export function FeaturedCollection({ locale }: FeaturedCollectionProps) {
                 className="relative overflow-hidden"
                 style={{ aspectRatio: '4/3' }}
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <MediaImage
                   src={collectionAsset('dubai', 'gallery', 'dubai-gallery-01.jpeg')}
                   alt="Dubai koleksiyonu galeri görseli"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
+                  fill
+                  sizes="(max-width: 1024px) 50vw, 25vw"
+                  wrapperClassName="absolute inset-0"
                 />
               </motion.div>
             </div>

@@ -9,6 +9,7 @@ import { useReducedMotion } from '@/hooks/useReducedMotion';
 import { collectionAsset } from '@/lib/assets/urls';
 import { Container } from '@/components/ui/Container';
 import { Eyebrow } from '@/components/ui/Typography';
+import { MediaImage } from '@/components/ui/MediaImage';
 import { cn } from '@/lib/utils/cn';
 
 interface ContactCTAProps {
@@ -24,13 +25,14 @@ export function ContactCTA({ locale }: ContactCTAProps) {
     <section className="relative section-padding overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0" aria-hidden="true">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <MediaImage
           src={collectionAsset('lasvegas', 'homepage', 'lasvegas-hero-01.jpeg')}
           alt=""
-          className="w-full h-full object-cover"
-          style={{ objectPosition: '50% 50%' }}
-          loading="lazy"
+          fill
+          sizes="100vw"
+          focalX={50}
+          focalY={50}
+          wrapperClassName="absolute inset-0"
         />
         <div className="absolute inset-0 bg-dark/70" />
       </div>

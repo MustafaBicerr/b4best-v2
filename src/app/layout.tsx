@@ -30,10 +30,11 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://be4best.com'),
   title: {
-    default: 'Be4Best Furniture',
+    default: 'Be4Best Furniture — Lüks Mobilya Koleksiyonları',
     template: '%s | Be4Best Furniture',
   },
-  description: 'Luxury furniture collections inspired by the world\'s most prestigious locations.',
+  description:
+    'Dubai, Milano, Paris ve Havai koleksiyonlarıyla premium mobilya. Kayseri merkezli Be4Best Furniture, 30+ ülkeye ihracat yapan lüks mobilya üreticisi.',
   icons: {
     icon: '/icons/favicon.ico',
     apple: '/icons/apple-touch-icon.png',
